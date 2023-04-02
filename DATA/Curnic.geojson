@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Curnic",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 3, "places": "Étang du Curnic" }, "geometry": { "type": "Point", "coordinates": [ -4.43473003217909, 48.633479015436109 ] } }
+]
+}

@@ -1,0 +1,131 @@
+<style>
+.data-desc {
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	width: 100%;
+}
+
+.data-desc>div {
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+
+.data-desc>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.data-desc>div .data-desc-white {
+    background-color: white;
+    width: 40%;
+}
+.data-desc>div .data-desc-white p, .data-desc>div .data-desc-white ul {
+    font-size: 120%;
+    font-weight: 400;
+    padding: 20px;
+    width: 100%;
+}
+.data-desc>div .data-desc-green {
+    background-color:#007478;
+    color: white;
+    width: 60%;
+}
+.data-desc>div .data-desc-green p, .data-desc>div .data-desc-green ul {
+    width: 100%;
+    font-size: 100%;
+    font-weight: 300;
+    padding: 20px;
+}
+.data-desc>div .data-desc-green ul {
+    list-style-type: none;
+}
+.data-desc>div .data-desc-green li {
+    padding-bottom: 5px;
+}
+
+</style>
+
+
+<div class="data-desc">
+    <div>
+        <div class="data-desc-green">
+            <p style="text-align: right;">
+                <b>Type :</b> Raster (MNT) / <b>Résolution :</b> 1 m / <b>Fournisseur :</b> SHOM-IGN
+            </p>
+
+            <!-- <ul style="text-align: right;">
+                <li><b>Type :</b> Raster (MNT)</li>
+                <li><b>Résolution :</b> 1 m</li>
+                <li><b>Fournisseur :</b> SHOM/IGN</li>
+            </ul> -->
+        </div>
+
+        <div class="data-desc-white">
+            <p>
+                Dalles Litto3D
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="data-desc-white">
+            <p style="text-align: right;">
+                Tronçons de route
+            </p>
+        </div>
+        
+        <div class="data-desc-green">
+            <p>
+                <b>Type :</b> Vectoriel (polyligne) / <b>Fournisseur :</b> IGN (BDTopo)
+            </p>
+            <!-- <ul>
+                <li></li>
+                <li></li>
+            </ul> -->
+        </div>
+    </div>
+
+    <div>
+        <div class="data-desc-green">
+            <p style="text-align: right;">
+                <b>Type :</b> Vectoriel (Ligne) / <b>Fournisseur :</b> CEREMA-SHOM
+            </p>
+
+            <!-- <ul style="text-align: right;">
+                <li><b>Type :</b> Vectoriel (Ligne)</li>
+                <li><b>Fournisseur :</b> CEREMA/SHOM</li>
+            </ul> -->
+        </div>
+
+        <div class="data-desc-white">
+            <p>
+                Niveaux Marins Extrême
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="data-desc-white">
+            <p style="text-align: right;">
+                Dalles BDAlti
+            </p>
+        </div>
+
+        <div class="data-desc-green">
+            <p>
+                <b>Type :</b> Raster (MNT) / <b>Résolution :</b> 25 m / <b>Fournisseur :</b> IGN
+            </p>
+
+            <!-- <ul>
+                <li><b>Type :</b> Raster (MNT)</li>
+                <li><b>Résolution :</b> 25 m</li>
+                <li><b>Fournisseur :</b> IGN</li>
+            </ul> -->
+        </div>
+    </div>
+
+</div>

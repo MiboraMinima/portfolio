@@ -1,0 +1,363 @@
+/* Style Projets */
+h4 {
+    font-family: "Fira Sans";
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+
+.content-top {
+    padding: 30px 40px;
+    width: 100%;
+    /*shlag shit*/
+    width: -webkit-fill-available;
+    /*shlag shit*/
+    height: 55vh;
+}
+
+.content-left {
+    float: left;
+    padding: 30px 40px;
+    width: 60%;
+    /*shlag shit*/
+    width: -webkit-fill-available;
+    /*shlag shit*/
+    height: 95vh;
+}
+
+.content-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: #007478;
+}
+
+.content-right {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: #007478;
+}
+
+.content-top-example {
+    padding: 30px 40px;
+    width: 100%;
+    /*shlag shit*/
+    width: -webkit-fill-available;
+    /*shlag shit*/
+    height: 22vh;
+}
+
+.content-bottom-example {
+    display: none;
+    /* padding: 30px 40px; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 78vh;
+}
+.content-bottom-example p.proj-desc {
+    padding: 30px 40px;
+}
+
+.swiper-slide p {
+    font-size: 90%;
+    font-weight: 300;
+}
+
+.content-left ul {
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.content-left li {
+    font-size: 90%;
+    font-weight: 300;
+    padding-top: 7px;
+}
+
+.swiper-slide a {
+    color: #007478;
+}
+
+.green {
+    color: #007478;
+}
+
+.proj-date {
+    font-size: 120%;
+    font-family: 'Fira sans';
+    margin-bottom: 5%;
+}
+
+.proj-desc {
+    width: 80%;
+}
+
+p.proj-desc {
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.proj-desc ul {
+    list-style: none;
+}
+
+.proj-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+
+#home img {
+    position: absolute;
+}
+
+.content-img-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.content-img-side {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.img-proj-desc {
+    position: relative;
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 0px;
+    /* why ???*/
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    visibility: hidden;
+    font-size: 75%;
+    font-weight: 300;
+}
+
+.content-img-desc:hover .caption {
+    visibility: visible;
+}
+
+#id-tdc {
+    width: 120%;
+    height: 101%;
+}
+
+.legend {
+    display: none;
+}
+
+.legend p {
+    color: #007478;
+    font-size: 90%;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    line-height: 1.5em;
+}
+
+.signal-mod-div {
+    display: none;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+}
+
+.signal-mod-div .img-div {
+    width: 93%;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -2%;
+}
+
+.signal-mod-div p.proj-desc {
+    margin-bottom: 5%;
+}
+
+.signal-mod-div p.proj-desc a {
+    font-size: 130%;
+    font-weight: 500;
+}
+
+#map {
+    height: 100%;
+}
+
+.content-top ul {
+    font-size: 100%;
+    margin-left: 6%;
+    font-weight: 300;
+}
+
+.content-top ul li {
+    padding-top: 10px;
+}
+
+
+
+/* DATA DESC */
+.data-circle-container {
+    position: absolute;
+    width: 70%;
+}
+.data-circle-container p {
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.data-circle {
+    float: left;
+    background-color: #007478;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    shape-outside: circle(62%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: shape-outside 0.5s ease-in-out; */
+}
+.data-circle2 {
+    float: left;
+    background-color: #007478;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    shape-outside: circle(65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: shape-outside 0.5s ease-in-out; */
+}
+
+.data-circle p {
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-weight: 400;
+}
+.data-circle2 p {
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-weight: 400;
+}
+
+/* TRAIT */
+h5 {
+    font-family: 'Fira Sans';
+    font-size: 100%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.trait-slide-contain {
+    display: none;
+    position: absolute;
+    height: 100%;
+}
+.trait-div-slide {
+	display: flex;
+	padding: 15px 0px 30px 40px;
+}
+.trait-div-slide-text {
+    width: 80%;
+}
+.trait-div-slide-text p.proj-desc {
+    padding: 0px;
+}
+
+.trait-div-slide-button {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.trait-div-slide-button p {
+    font-size: 250%;
+}
+p.proj-desc-sub {
+    padding-left: 0;
+    padding-right: 2%;
+    width: 100%;
+    padding-top: 0;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+ol {
+    font-size: 100%;
+    font-weight: 300;
+    padding-left: 8%;
+}
+
+ol li {
+    padding-top: 10px;
+}
+
+/*TABLE*/
+table {
+    width: 100%;
+    padding: 1%;
+    border-collapse: collapse;
+}
+thead tr th {
+    border-bottom: 1.75px solid black ;
+    text-align: left;
+    padding-bottom: 1%;
+}
+th {
+    font-size: 90%;
+    font-weight: 400;
+}
+td {
+    font-size: 90%;
+    font-weight: 300;
+    padding: 0.6%;
+}
+.border-bot {
+    border-bottom: 1.75px solid;
+}
+
+/*L3 spe */
+.float-div-mnt {
+    position: absolute;
+    z-index: 1;
+    padding-left: 40px;
+}
+
+.float-div-mnt ul {
+    font-size: 90%;
+    font-weight: 300;
+    list-style: none;
+}
+.float-div-mnt ul li {
+    padding-top: 5px;
+}
+
+#lez-mnt .modebar {
+    display: none !important;
+}

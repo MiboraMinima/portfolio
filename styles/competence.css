@@ -1,0 +1,139 @@
+.comp-container-head {
+    height:20vh;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+/* .comp-container-head h2 {
+    padding-left: 30px;
+} */
+.comp-container-body {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+}
+.list-comp {
+    width: 20%;
+    height: 100%;
+    /* padding: 30px 3%; */
+    background-color: #007478;
+    font-size: 110%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list-comp div {
+    height: calc(100% / 7);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.list-comp div p a {
+    color: white;
+}
+.comp-detail {
+    width: 80%;
+    height: 100%;
+    padding: 30px 4%;
+}
+.comp-detail-item {
+    display: none;
+    height: 100%;
+}
+.comp-detail-item ul {
+    list-style: none;
+}
+.comp-detail-item ul li {
+    list-style: none;
+    font-size: 110%;
+    font-weight: 300;
+    padding-bottom: 18px;
+}
+.comp-detail-item ul ul li {
+    list-style: none;
+    font-size: 100%;
+    padding-left: 10%;
+    padding-bottom: 10px;
+}
+.comp-detail-item-sub {
+    display: flex;
+}
+.comp-detail-item-sub1 {
+    width: 70%;
+}
+.comp-detail-item-sub2 {
+    width: 30%;
+}
+.comp-detail-item-sub2 p {
+    color:#007478;
+    font-style: italic;
+    text-align: right;
+}
+.comp-detail img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+.comp-detail-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 150px;
+    grid-gap: 10px;
+    padding-top:6%;
+}
+.comp-detail-img-py {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 150px 150px;
+	grid-gap: 10px;
+	padding-top: 6%;
+}
+.comp-detail-img-py img {
+    width: 83%;
+    height: 60%;
+    object-fit: contain;
+}
+
+div#py-log img {
+	width: auto;
+	margin-right: 35px;
+	height: 60px;
+}
+
+.div-color {
+    background-color: white;
+}
+.list-comp a.text-color {
+    color:#007478;
+    font-weight: 400;
+}
+
+#statistiques h4 {
+    padding-top: 20px;
+}
+#statistiques p {
+    line-height: 1.5em;
+}
+#viz h3 {
+    padding-bottom: 5px;
+}
+#viz ul {
+    padding-bottom:6%;
+}
+
+.comp-other {
+    width: 50%;
+    padding: 3%;
+}
+.change-comp-other {
+    color:white;
+    background-color: #007478;
+}
+.bar-anime {
+    width:0%;
+    height: 20%;
+    background-color: #007478;
+    margin-bottom: 20px;
+    
+}

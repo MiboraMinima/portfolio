@@ -1,0 +1,127 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: 'Fira sans', 'Inconsolota';
+    margin: 0;
+}
+
+main {
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+}
+
+aside {
+    width: 45%;
+    height: 100%;
+}
+
+section {
+    overflow: hidden;
+    width: 65%;
+    height: 100%;
+    border-left: 2px solid black;
+}
+
+.content {
+    position: absolute;
+    display: none;
+    padding: 30px 40px;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    height: 95vh;
+}
+
+footer {
+    background-color: white;
+    width: 100vw;
+    height: 5vh;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+}
+
+
+h1 {
+    font-family: 'Fira sans';
+    font-weight: 400;
+    font-size: 180%;
+    margin-bottom: 50px;
+    margin-left: 8%;
+    padding-top: 3%;
+}
+
+h2 {
+    font-family: 'Fira sans';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 180%;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-size: 120%;
+    font-weight: 500;
+    padding-top: 0;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+}
+
+p {
+    text-indent: 0px;
+}
+
+footer p {
+    text-indent: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.desc {
+    margin-left: 15%;
+    margin-right: 10%;
+    line-height: 2.75ex;
+    font-weight: 300;
+}
+
+.titre {
+    padding-top: 2%;
+}
+
+.title {
+    font-family: 'Fira code';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.container-aside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.sub-aside {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}

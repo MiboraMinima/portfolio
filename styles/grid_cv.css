@@ -1,0 +1,286 @@
+/* INFORMATIONS */
+.content-base {
+    position: absolute;
+    height: 95vh;
+    width: -moz-available;
+    /*shlag shit*/
+    width: -webkit-fill-available;
+    display: none;
+}
+
+.content-cv {
+    float: left;
+    padding: 30px 40px;
+    width: 60%;
+    /*shlag shit*/
+    width: -webkit-fill-available;
+    /*shlag shit*/
+    height: 95vh;
+}
+
+.content-bande-1 {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: #007478;
+}
+
+#cv h2 {
+    padding-top: 0;
+}
+
+.grid-item h3, .texte-child-hor h3 {
+    font-size: 120%;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.container-base {
+    display: block;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-etab ul {
+    list-style: none;
+    padding-bottom: 5%;
+}
+
+.container-etab li {
+    padding: 1% 0;
+}
+
+.date-child {
+    float: left;
+    width: 20%;
+}
+.texte-child {
+    float: left;
+    width: 75%;
+}
+
+
+/* Grid */
+.grid-container {
+    display: grid;
+    width:100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    /* background-color: lightblue; */
+    padding: 20px 20px;
+    font-size: 80%;
+}
+
+/* Description in bande */
+.desc-form p {
+    padding: 5% 5%;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.desc-form-1 p {
+    padding: 5% 5%;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.desc-form ul {
+    padding-left: 30px;
+}
+.desc-form li {
+    font-size: 90%;
+    line-height: 1.5em;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.desc-form {
+    display: block;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0;
+    transition: opacity 1s; */
+}
+.desc-form-1 {
+    display: block;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    height: 100%;
+    /* opacity: 0;
+    transition: opacity 1s; */
+}
+.texte-child-hor {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.desc-form-2 p {
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.info {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 0;
+    background-color: #007478;
+    left:4.4%;
+    margin-top: 0.2%;
+}
+.descri {
+    width: 231px;
+    height: 165px;
+    position: absolute;
+    top:0;
+    right: 165px;
+    background-color: #007478;
+    margin-top: 0.2%;
+}
+
+
+
+/* SWIPER */
+.swiper-container {
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: -moz-available;
+    /*shlag shit*/
+    width: -webkit-fill-available;
+    /*shlag shit*/
+    height: 95vh;
+}
+
+.swiper-slide {
+    background: #fff;
+    height: 95vh;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* STAGE */
+.content-bande-2 {
+    width: 100%;
+    height: 40vh;
+    background-color: #007478;
+}
+
+.content-stage {
+    padding: 30px 40px;
+    width: 100%;
+    /*shlag shit*/
+    width: -webkit-fill-available;
+    /*shlag shit*/
+    height: 60vh;
+}
+
+.grid-container-2 {
+    position: absolute;
+    display: grid;
+    width:100%;
+    /* grid-template-columns: 100%;
+    grid-template-rows: auto; */
+    grid-auto-flow: column;
+}
+
+.grid-item-hor {
+    /* background-color: lightblue; */
+    padding: 10px 10px;
+    font-size: 80%;
+}
+
+/* Underline */
+.underline {
+    padding-bottom: 5px;
+    border-bottom: 5px solid #007478;
+}
+
+/* Par ailleurs*/
+.display {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5%;
+    color: #007478;
+    font-size: 300%;
+    padding-right: 2%;
+}
+
+#ailleurs p {
+    font-size: 130%;
+    line-height: 1.75em;
+}
+
+#ailleurs span {
+    color: white;
+    background-color: #007478;
+}
+
+#ailleurs a {
+    color: white;
+    background-color: #007478;
+}
+
+/* Animation formation */
+.animate-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+}
+.circle {
+    position: absolute;
+    top:-60px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.circle2 {
+    position: absolute;
+    top:-70px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
+.circle3 {
+    position: absolute;
+    top:-50px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.container-form-corp {
+    padding-bottom: 15px;
+}
+.box {
+    position: relative;
+    width: 3.7%;
+    height: 9%;
+    background-color:#007478;
+    margin: 0.2%;
+}

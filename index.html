@@ -1,0 +1,2586 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- en-tete de la page -->
+    <meta charset="utf-8">
+    <title> aledoeuff</title>
+
+    <!-- Link -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/grid_cv.css">
+    <link rel="stylesheet" href="styles/proj.css">
+    <link rel="stylesheet" href="styles/competence.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- leaflet -->
+    <link href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+    <!-- Include CARTO.js -->
+    <script src="https://cartodb-libs.global.ssl.fastly.net/carto.js/v4.2.0/carto.min.js"></script>
+
+    <!-- Anime.js -->
+    <script src="assets/anime-master/lib/anime.min.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/anime.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/slider.js"></script>
+    <script type="text/javascript" src="scripts/modal.js"></script>
+    <script type="text/javascript" src="scripts/cv.js"></script>
+    <script type="text/javascript" src="scripts/arrows.js"></script>
+    <script type="text/javascript" src="scripts/proj.js"></script>
+    <script type="text/javascript" src="scripts/comp.js"></script>
+</head>
+
+<!-- Corps du texte -->
+<html>
+
+<body>
+
+    <main>
+
+        <!-- ASIDE -->
+        <aside class="container-aside">
+            <div class="titre">
+                <h1>
+                    <a id="id-home" href="#home"><span class="title">ANTOINE LE DOEUFF</span><br>Géographie &<br>
+                        Sciences de l'Environnement</a>
+                </h1>
+            </div>
+
+            <div class="sub-aside">
+                <div class="desc">
+                    <p>
+                        Géographe versé dans les sciences de l'environnement et passionné d'analyse spatiale, je
+                        souhaite aujourd’hui me
+                        spécialiser dans la géomatique afin d'acquérir des compétences pointues dans le traitement et
+                        l'analyse de données
+                        spatiales.
+                        <br>
+                        <br>
+                        Ce portfolio a été réalisé spécialement pour appuyer ma candidature au Master SIGAT. En espérant
+                        qu'il
+                        saura témoigner de ma motivation et de mes capacités à intégrer cette formation.
+                    </p>
+                </div>
+
+                <!-- NAV -->
+                <nav>
+                    <ul>
+                        <li id="nav-1" class="dropdown">
+                            <button id="dropbtn-nav" class="dropdown-btn"><a href="#">Projets</a><span class="arrow-nav"
+                                    style="padding-left: 20px;">→</span></button>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Travaux d'études</a><span class="arrow-sub-nav"
+                                        style="padding-left: 20px;">→</span>
+                                    <ul class="ul-proj">
+                                        <li>
+                                            <span class="arrow-item-sub" style="padding-right: 20px;">→</span>
+                                            <a id="id-aix" href="#aix">Paysage sonore l'île d'Aix</a>
+                                        </li>
+
+                                        <li>
+                                            <span class="arrow-item-sub" style="padding-right: 20px;">→</span>
+                                            <a id="id-dpt-routes" href="#dpt-routes">Vulnérabilité des routes
+                                                départementales du Finistère aux risques côtiers</a>
+                                        </li>
+
+                                        <li>
+                                            <span class="arrow-item-sub" style="padding-right: 20px;">→</span>
+                                            <a id="id-mono-da" href="#mono-da">Monographie communale de Daoulas</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Stages</a><span class="arrow-sub-nav"
+                                        style="padding-left: 20px;">→</span>
+                                    <ul class="ul-proj">
+                                        <li><span class="arrow-item-sub" style="padding-right: 20px;">→</span><a
+                                                id="id-etang-curnic" href="#etang-curnic">Étude globale de l'étang du
+                                                Curnic</a></li>
+                                        <li><span class="arrow-item-sub" style="padding-right: 20px;">→</span><a
+                                                id="id-stage-l3" href="#stage-l3">Missions de terrains en géomorphologie
+                                                et traitement de données en laboratoire</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Autres</a><span class="arrow-sub-nav"
+                                        style="padding-left: 20px;">→</span>
+                                    <ul class="ul-proj">
+                                        <li><span class="arrow-item-sub" style="padding-right: 20px;">→</span><a
+                                                id="id-api" href="#api">Galleries Twitter et Facebook</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li id="nav-2" class="dropdown">
+                            <button id="dropbtn-nav" class="dropdown-btn"><a href="#">Représentations Graphiques</a><span
+                                class="arrow-nav" style="padding-left: 20px;">→</span></button>
+
+                            <ul class="dropdown-content">
+                                <li><a  id="id-slider-div-carto" href="#slider-div-carto">Cartographie</a><span class="arrow-item"
+                                    style="padding-left: 20px;">→</span></li>
+                                <li><a id="id-slider-div-autre" href="#slider-div-autre">Autres</a><span class="arrow-item"
+                                    style="padding-left: 20px;">→</span></li>
+                            </ul>
+                        </li>
+
+                        <li id="info" class="dropdown">
+                            <button id="dropbtn" class="dropdown-btn"><a href="#">Informations</a><span
+                                    class="arrow-nav" style="padding-left: 20px;">→</span></button>
+
+                            <ul class="dropdown-content">
+                                <li><a id="id-cv" href="#cv">Curriculum</a><span class="arrow-item"
+                                        style="padding-left: 20px;">→</span></li>
+                                <li><a id="id-comp" href="#comp">Compétences techniques</a><span class="arrow-item"
+                                        style="padding-left: 20px;">→</span></li>
+                                <li><a id="id-ailleurs" href="#ailleurs">Par ailleurs...</a><span class="arrow-item"
+                                        style="padding-left: 20px;">→</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+
+
+
+
+        <!-- SECTION -->
+        <section>
+            <div id="home" class="content" style="position: relative; display:block;">
+                <img src="figures/CartoGeomorpho_Tasman_Glacier.png" alt="image-titre"
+                    style="top: -63vh; left:-35vw; width:175%;">
+            </div>
+
+            <!-- AIX -->
+            <div id="aix" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content-top">
+                            <h2>Étude du paysage sonore du littoral de l'île d'Aix</h2>
+
+                            <p class="proj-date"><span class="green">13 février 2023 → 17 février 2023 </span> • UE de
+                                Master 2 EGEL</p>
+
+                            <p class="proj-desc">
+                                Étude réalisée dans le cadre de l'Unité d'Enseignement "Aire Marine Protégée" (AMP) du
+                                Master 2
+                                EGEL. Dans le cadre de cette UE, les étudiants se rendent sur le terrain pendant cinq
+                                jours où
+                                ils répondent à la commande d'une AMP. En février 2023, le Master s'est rendu sur l'île
+                                d'Aix
+                                pour répondre à une commande du Parc naturel marin de l'estuaire de la Gironde
+                                et de la mer des Pertuis. <br>
+                                <br>
+                                L'étude propose plusieurs méthodologies ainsi que des
+                                résultats indicatifs permettant d'évaluer le paysage sonore de l'île d'Aix.
+                            </p>
+                        </div>
+
+                        <div class="content-bottom" style="overflow: hidden;background-color:white;">
+                            <img src="Figures/aix_son_vect_done.png" alt="aix prise de son"
+                                style="width:71%;position:absolute;top:10%;right:2%;">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-top">
+                            <h3 class="green">Exemple : méthode de la balade sonore</h3>
+
+                            <p class="proj-desc">
+                                Une des méthodologies proposées consiste dans la réalisation d'une balade sonore sur le
+                                littoral de l'île d'Aix. Les résultats ont été compilés sous la forme d'une ébauche de
+                                carte interactive,
+                                intégrant une dimension phonique (cartophonie), réalisée sous R. <br>
+                                <br>
+                                Plus de détail sur la méthode et le code sont disponibles sur <a
+                                    href="https://github.com/MiboraMinima/aix-carto-son">GitHub</a>.
+                            </p>
+
+                        </div>
+
+                        <div class="content-bottom" style="height: 63vh;">
+                            <iframe src="Figures/aix_balade_sonore.html" width="100%" height="100%"
+                                style="border-bottom: black; border-left: black;border-right: black;"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h3>Compétences techniques développées</h3>
+
+                            <h4>Géomatique</h4>
+                            <ul>
+                                <li>WepMapping sous R (utilisation du package leaflet)</li>
+                            </ul>
+
+                            <h4>Terrain</h4>
+                            <ul>
+                                <li>Acquisition de données phoniques</li>
+                            </ul>
+                        </div>
+
+                        <div id="legend-phare" class="legend"
+                            style="position: absolute; bottom:5%;width: 43%; right: 43%;">
+                            <p>
+                                Phare de l'île d'Aix. <br>
+                                Téo Biglietti, 2023.
+                            </p>
+                        </div>
+
+                        <div id="phare-aix" class="content-right" style="background-color:white;">
+                            <img src="Figures/aix_photo.JPG" alt="photo phare" style="height:100%">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- STAGE L3 LETG -->
+            <div id="stage-l3" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content-top">
+                            <h2>Missions de terrains en géomorphologie et traitement de données topographiques en
+                                laboratoire</h2>
+
+                            <p class="proj-date">
+                                <span class="green">Mai 2021 → août 2021</span> • Stage volontaire • LETG (IUEM),
+                                Plouzané
+                            </p>
+
+                            <p class="proj-desc">
+                                Participation aux missions de terrain portant sur les topomorphologiques de plage
+                                réalisés dans le cadre de l’observatoire du domaine côtier de l’IUEM (ODC-trait de
+                                côte), et du
+                                service national d’observation SNO-DYNALIT. Traitement des données au sein du
+                                laboratoire
+                                LETG-Brest, et mise en forme et saisie des méta-données sous la plateforme d’archivage
+                                INDIGEO.
+                            </p>
+                        </div>
+
+                        <div class="content-bottom" style="background-color:white;">
+                            <svg id="id-tdc" viewBox="0 0 550 125">
+                                <polygon stroke="#007478" fill="#007478" stroke-width="10px" stroke-linecap="round"
+                                    stroke-linejoin="round" fill="white"
+                                    points=".92 159.17 37.14 103.81 79.01 85.12 133.65 74.91 177.05 56.02 247.01 32.53 313.9 45.29 385.39 77.98 416.54 57.04 430.73 37.54 440.03 17.72 460.92 1.04 460.92 159.17 .92 159.17">
+                                </polygon>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+
+
+                        <h3 style="padding:30px 40px;padding:30px 40px;position: absolute;z-index: 1;">Compétences
+                            techniques développées</h3>
+
+                        <div class="float-div-mnt" style="bottom: 5%;">
+                            <h4>Géomatique</h4>
+                            <ul>
+                                <li>Manipulation attributaire sous QGIS</li>
+                                <li>Utilisation du <a
+                                        href="https://www.usgs.gov/centers/whcmsc/science/digital-shoreline-analysis-system-dsas#overview"><i>Digital
+                                            Shoreline Analysis System</i></a> <br>
+                                    (DSAS) sous ArcGIS</li>
+                            </ul>
+                        </div>
+
+                        <div class="float-div-mnt" style="top: 13%">
+                            <h4>Statistiques</h4>
+                            <ul>
+                                <li>Analyse de la cinématique du trait de côte</li>
+                                <li>Analyse sous R</li>
+                                <ul style="font-size: 100%;">
+                                    <li>Normalisation : <i>Regular Expression</i></li>
+                                    <li>Analyse descriptive : univariée et multivariée</li>
+                                    <li>Modélisation : régression linéaire</li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                        <div class="float-div-mnt" style="bottom: 26%;">
+                            <h4>Base de données</h4>
+                            <ul>
+                                <li>Normalisation de données bruts issus du terrain</li>
+                                <li>Conception de métadonnée normé</li>
+                                <li>Interaction avec une base de donnée spatiale <a
+                                        href="https://indigeo.fr/">(INDIGEO)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="float-div-mnt" style="top: 41%;">
+                            <h4>Terrain</h4>
+                            <ul>
+                                <li>Conduction d'un levé topomorphologique</li>
+                                <li>Utilisation de DGPS RTK</li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="content-right"
+                            style="background-color: white;width: 69%;position: absolute;right: -1%;z-index: 0;top: 19px;padding-top: 8%;">
+                            <div id="lez-mnt" style="width:100%;height:100%;">
+                                <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                                <iframe src="figures/lez_mnt.html" style="width: 100%;height: 100%;"
+                                    frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- MONOGRAPHIE COMMUNALE DE DAOULAS -->
+            <div id="mono-da" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div class="content-top">
+                            <h2>Monographie Communale : Daoulas, structure et dynamique d'une commune de traverse</h2>
+
+                            <p class="proj-date"><span class="green">Septembre 2021 → décembre 2021</span> • UE de
+                                Master 1 EGEL</p>
+
+                            <p class="proj-desc">
+                                Unité d'enseignement se déroulant sur quatre mois, la monographie communale a pour but
+                                de développer des compétences d'analyse
+                                spatiale allié à un travail d'enquête afin de mettre en perspective les particularismes
+                                du territoire étudié.
+                            </p>
+                        </div>
+
+                        <div class="content-bottom-example" style="width: 107%;left: -10%;height: 55%; display:block;">
+                            <img src="figures/page_garde_daoulas-03.png" alt="daoulas couv" class="img-proj-desc"
+                                style="width:106%;object-fit:contain;">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-top">
+                            <h3 class="green">Exemple : estimation du risque de submersion marine</h3>
+
+                            <ul>
+                                <li>Traitements de modèle de numérique de terrain (litto3D)</li>
+                                <li>Modélisation de hauteur d'eau pour un aléa extrême en fonction des scénarios du
+                                    GIEC</li>
+                                <li>Identification du bâti touché et des potentiels enjeux humains</li>
+                            </ul>
+                        </div>
+
+                        <div id="daoulas-sub-carto" class="content-bottom"
+                            style="background-color: white;display:flex; justify-content:center; height:70vh;">
+                            <img src="figures/daoulas_sub.png" alt="Daoulas sub" class="img-proj-desc"
+                                style="padding:2% 2%;">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h3>Compétences techniques développées</h3>
+
+                            <h4>Géomatique</h4>
+                            <ul>
+                                <li>Traitements et cartographie de modèle de numérique de terrain</li>
+                                <li>Modélisation de hauteur d'eau sur MNT</li>
+                            </ul>
+
+                            <h4>Graphisme</h4>
+                            <ul>
+                                <li>Conception d'une édition sous InDesign</li>
+                            </ul>
+
+                            <h4>Terrain</h4>
+                            <ul>
+                                <li>Entretien</li>
+                            </ul>
+
+                            <h4>Autre</h4>
+                            <ul>
+                                <li>Réalisation d'un court métrage sur l'abbaye de Daoulas</li>
+                            </ul>
+
+                        </div>
+
+                        <div id="legend-mnt-daoulas" class="legend"
+                            style="position: absolute; bottom:5%;width: 43%; right: 43%;">
+                            <p>
+                                Topographie de la commune de Daoulas (détail).<br>
+                                Données : Litto3D (SHOM/IGN, 2014). <br>
+                                Antoine Le Doeuff, 2021.
+                            </p>
+                        </div>
+
+                        <div id="mnt-daoulas" class="content-right">
+                            <div class="content-img-side">
+                                <img src="figures/daoulas_topo.png" alt="Daoulas topo" class="img-proj-desc" style="
+                                    width: 200%;
+                                    right: 28px;
+                                    top: -125px;
+                                    transform: rotate(25deg);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ÉTUDE GLOBALE DE L'ÉTANG DU CURNIC -->
+            <div id="etang-curnic" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content-top" style="position: absolute; z-index:1">
+                            <h2>Étude Globale de l'étang du Curnic en vue de renforcer ses capacités épuratoire et
+                                d'accueil de la biodiversité remarquable</h2>
+
+                            <p class="proj-date"><span class="green">Avril 2022 → août 2022</span> • Stage de Master 1 •
+                                Mairie de Guissény</p>
+
+                            <p class="proj-desc">
+                                Conduction d'une étude globale sur l'étang du Curnic à Guissény. L'objectif était
+                                de traiter des données physico-chimiques, hydrologiques et topo-bathymétriques afin
+                                d'accroître les
+                                connaissances sur ce système lagunaire dans l'objectif de parvenir à une gestion
+                                appropriée de son
+                                syndrome d'eutrophisation.
+                                Le rapport est disponible en <a
+                                    href="https://miboraminima.github.io/etang-curnic.github.io/">ligne</a>.
+                            </p>
+                        </div>
+
+                        <div class="content-bottom" style="background-color: white;">
+                            <img src="Figures/etang_fig.png" alt="etang fig" class="img-proj-desc" style="
+                                width:100%;
+                                position:absolute;
+                                bottom:-35%;
+                                z-index:0;
+                            ">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-top" style="background-color:#007478; height:40vh">
+                            <div style="display: flex;">
+                                <div style="color:white;">
+                                    <h3>Objectif</h3>
+
+                                    <p class="proj-desc">
+                                        Une compréhension accrue du système lagunaire du Curnic pour une gestion
+                                        appropriée de la problématique d’eutrophisation
+                                    </p>
+                                </div>
+
+                                <div style="color:white;">
+                                    <h3>Problématique</h3>
+
+                                    <p class="proj-desc">
+                                        Quelle gestion envisager afin de limiter l’impact des apports excessifs en
+                                        nutriments sur la biodiversité remarquable dans l’étang du Curnic ?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-bottom" style="background-color:white; height:60vh;">
+                            <div style="display: flex; height:100%">
+                                <div style="width: 50%;padding:30px 38px;">
+                                    <h3 style="padding-top: 5%;">Conclusion</h3>
+
+                                    <p class="proj-desc" style="width: 100%;">
+                                        Le fonctionnement global de l’étang du Curnic est rapproché de celui d’une
+                                        lagune tempérée. Le phénomène épuratoire dans le marais et dans l’étang est
+                                        quantifié et l’hypothèse d’un abattement conséquent des flux en nutriments
+                                        confirmée. Discutés, ces résultats indiquent qu’une gestion ciblée sur les
+                                        pratiques agricoles en amont du système est nécessaire afin d’adresser de
+                                        manière optimale l’apport excessif d’azote dans les milieux.
+                                    </p>
+                                </div>
+
+                                <div style="width: 50%;position: absolute;height: 100%;right: 0; clear:both;">
+                                    <div id="map"></div>
+                                    <script src="scripts/leaflet.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-left" style="width:55%">
+                            <h3 class="green">Exemple : abattement du nitrate par le marais et l'étang du Curnic</h3>
+
+                            <p class="proj-desc">
+                                Au total, environ 152 tonnes de nitrate (NO3) et 34 tonnes de N-NO3 sont importées dans
+                                l’étang sur la période considérée entre juin 2021 et juin 2022<br>
+                                <br>
+                                Sur cette période, l’abattement moyen du nitrate (et de N-NO3) procuré par l’étang, au
+                                regard des flux qui y sont importés, est d’environ 52 %. <br>
+                                <br>
+                                L’abattement est un phénomène saisonnier qui a principalement lieu durant la période
+                                estivale en lien avec la production primaire et le phénomène de dénitrification. Ainsi,
+                                sa variation au cours de l’année est considérable, pouvant atteindre 100 % en été et
+                                être nulle en hiver.
+                            </p>
+
+                            <div id="legend-nitrate" class="legend"
+                                style="position: absolute; bottom:5%;width: 43%; right: 48%;">
+                                <p>
+                                    Abattement moyen annuel entre les cours d'eau de la falaise morte et l'exutoire de
+                                    l'étang
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content-right" style="background-color: white;">
+                            <img id="plot-nitrate" src="Figures/Nitrate_Abattement_2.png" alt="flux no3"
+                                class="img-proj-desc" style="height: 100%;">
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="content-top-example">
+                            <h3 class="green">Exemple : traitement du signal de hauteur d'eau</h3>
+
+                            <h4 style="margin-bottom:4.5%;">
+                                <a id="id-signal-brut" class="underline" href="#signal-brut">Signal brut</a> → <a
+                                    id="id-signal-decomp" href="#signal-decomp">Décomposition</a> → <a
+                                    id="id-signal-mod" href="#signal-mod">Modélisation</a>
+                            </h4>
+                        </div>
+
+                        <div id="signal-brut" class="content-bottom-example" style="display: block;">
+                            <div style="display: flex;flex-direction: column;height:100%;">
+                                <p class="proj-desc" style="padding-top:15px;">
+                                    Le signal de hauteur d'eau dans l'étang est enregistré par une sonde autonome placé
+                                    à l'exutoire de l'étang.
+                                </p>
+
+                                <div style="width:100%;height:100%;padding: 0px 40px;">
+                                    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                                    <iframe src="figures/sond_plotly_1.html" style="width: 100%;height: 100%;"
+                                        frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="signal-decomp" class="content-bottom-example">
+                            <div style="display: flex;">
+                                <p class="proj-desc" style="width: 30%;padding-top:15px;">
+                                    Le signal brut est décomposé en utilisant le modèle STL (<i>Seasonal and Trend
+                                        decomposition using Loess</i>) <br>
+                                    <br>
+                                    Une brève analyse visuelle permet d'identifier les forçages. Ici,
+                                    l'effet des clapets à l'exutoire de l'étang joue un rôle prépondérant.
+                                </p>
+
+                                <div style="width:70%;padding-top:15px;">
+                                    <img id="plot-decomp" src="Figures/dcmp.h_eau_sonde_hypo.png"
+                                        alt="signal décomposition" style="width:67%;position: absolute;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="signal-mod" class="content-bottom-example">
+                            <div id="signal-mod-ma" class="trait-slide-contain" style="display: block;">
+                                <div style="display: flex;flex-direction:column;height:100%;">
+                                    <div class="trait-div-slide">
+                                        <div class="trait-div-slide-text">
+                                            <p class="proj-desc">
+                                                On commence par calculer une moyenne mobile afin d’enlever les
+                                                imperfections liées à des phénomènes aléatoires enregistrés par la
+                                                sonde.
+                                            </p>
+                                        </div>
+
+                                        <div class="trait-div-slide-button">
+                                            <p><a href="#" style="color: white;">←</a> <a
+                                                    href="#signal-mod-detrend">→</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="trait-div-slide" style="width:100%;height:100%;padding:0 40px;">
+                                        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                                        <embed style="border: none;" src="figures/sond_plotly_ma.html" dpi="300"
+                                            width="100%" height="100%" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="signal-mod-detrend" class="trait-slide-contain">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <p class="proj-desc">
+                                            Dans l’objectif de rendre le signal stationnaire — prérequis à la majorité
+                                            des modélisations de série temporelle — on <i>detrend</i> la série. Cette
+                                            opération consiste à enlever supprimer la tendance du signal. <br>
+                                            Le corrélogramme indique la rémanence d'une tendance polynomiale
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#signal-mod-ma">←</a> <a href="#signal-mod-diff">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide"
+                                    style="padding: 0;justify-content: center;position: absolute;bottom: 10%;">
+                                    <img id="plot-decomp" src="Figures/autocor_h_eau_ma_detrend.png"
+                                        alt="signal detrend" style="object-fit: contain;width: 100%;">
+                                </div>
+                            </div>
+
+                            <div id="signal-mod-diff" class="trait-slide-contain">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <p class="proj-desc">
+                                            Pour supprimer la tendance polynomiale du signal on effectue une
+                                            différenciation. L'autocorrélation temporel du signal différencié est basé
+                                            sur le cycle des marées.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#signal-mod-detrend">←</a> <a href="#signal-mod-glm">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide"
+                                    style="padding: 0;justify-content: center;position: absolute;bottom: 10%;">
+                                    <img id="plot-decomp" src="Figures/h_eau_ma_detrend_diff.png" alt="signal diff"
+                                        style="object-fit: contain;width: 100%;">
+                                </div>
+                            </div>
+
+                            <div id="signal-mod-glm" class="trait-slide-contain">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <p class="proj-desc">
+                                            L’effet des prédicateurs sur la variable est évalué à l’aide d’un Modèle
+                                            Linéaire Généralisé (GLM).
+                                            On constate que l’ensemble des coefficients sont faibles excepté celui de la
+                                            modalité "ouvert" de la variable "clapets",
+                                            confirmant l'importance des clapets dans la variabilité de la hauteur d'eau
+                                            dans l'étang du Curnic. La figure ci-dessous
+                                            présente les coefficients.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#signal-mod-diff">←</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide"
+                                    style="width: 100%;padding: 0;display: flex;justify-content: center;">
+                                    <img id="plot-decomp" src="Figures/reg.conduc_coef.png" alt="signal model"
+                                        style="object-fit: contain;width: 60%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-top">
+                            <p class="proj-desc">
+                                Le poster réalisé à l'issu du stage synthétise les enjeux, pressions et gestions
+                                potentielles de l'étang. Il est lauréat du concours interne des posters.
+                            </p>
+                        </div>
+
+                        <div id="poster-curnic" class="content-bottom"
+                            style="height: 80vh; background-color:white;display: flex;justify-content: center;">
+                            <img src="Figures/gnsy_poster_stage_V3.png" alt="poster stage curnic"
+                                style="width: 85%;position: absolute;bottom: 4%;border: 2px solid #000;">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h3>Compétences techniques développées</h3>
+
+                            <h4>Géomatique</h4>
+                            <ul>
+                                <li>WepMapping sous <span class="green">R</span></li>
+                                <li>Analyse de données matricielles (MNT)</li>
+                            </ul>
+
+                            <h4>Statistiques</h4>
+                            <ul>
+                                <li>Analyse descriptive : univariée, bivariée et multivariée</li>
+                                <li>Modélisation : stochastique et déterministe</li>
+                                <li>Traitement et analyse de séries temporelles</li>
+                                <li>Application à des domaines variés (climatologie, chimie et hydrologie)</li>
+                            </ul>
+
+                            <h4>Terrain</h4>
+                            <ul>
+                                <li>Mesure de données physico-chimiques :</li>
+                                <ul style="margin-bottom: 0px;">
+                                    <li>Conductivité (sonde multiparamètre)</li>
+                                    <li>Température (sonde multiparamètre)</li>
+                                    <li>Concentration en nitrate (bandelettes nitrate)</li>
+                                </ul>
+                                <li>Mesure de débit (vélocimètre)</li>
+                                <li>Levé topomorphologique (DGPS RTK)</li>
+                                <li>Botanique et ornithologie</li>
+                            </ul>
+
+                            <h4>Autre</h4>
+                            <ul>
+                                <li>Conception d'un rapport sur Rmarkdown</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-right" style="background-color: white;overflow:hidden;">
+                            <img src="Figures/etang_photo.jpg" alt="photo_etang" style="height: 111%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROUTES LITTORISQUE -->
+            <div id="dpt-routes" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div class="content-top">
+                            <h2>Vulnérabilité des routes départementales du Finistère aux risques de submersion et
+                                d'érosion marine</h2>
+
+                            <p class="proj-date"><span class="green">Septembre 2022 → février 2023</span> • UE de Master
+                                2 EGEL</p>
+
+                            <p class="proj-desc">
+                                Diagnostic de la vulnérabilité des routes départementales du Finistère
+                                aux risques d’érosion et de submersion marine aux horizons 30 et 100 ans. La
+                                vulnérbilité est estimée à l'aide
+                                de deux indices de vulnérabilité restituant les différentes
+                                dimensions du risque à l'échelle départemental et local. <br>
+                                <br>
+                                Étude commanditée par le Conseil Départemental du Finistère dans le cadre du partenariat
+                                <a
+                                    href="https://www.risques-cotiers.fr/connaitre-les-risques-cotiers/projets/littorisques/">Litto'risque</a>.
+                            </p>
+
+                            <div id="legend-crozon" class="legend"
+                                style="position: absolute; bottom: 43%; width: 43%; right: 2%;">
+                                <p>
+                                    Affouillement de la route à Morgat (D 887). Téo Biglietti, 2022.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="crozon-route" class="content-bottom" style="overflow: hidden;">
+                            <img src="Figures/crozon_road.png" alt="route crozon"
+                                style="width: 100%; object-fit:contain;position: absolute;bottom: -45%;">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-top" style="height: 40vh;">
+                            <h3>Risque & vulnérabilité</h3>
+
+                            <p class="proj-desc">
+                                La vulnérabilité se définit comme la capacité d’endommagement des biens et des
+                                personnes.
+                                Autrement dit, elle correspond à leur potentiel à être abimé.
+                                Par conséquent, la vulnérabilité exprime le niveau d'effet prévisible
+                                d’un aléa sur des enjeux (le risque) et dépend de la façon dont une société répond à
+                                l’endommagement. <br>
+                                <br>
+                                Dans le cadre de cet atelier, l'attention a été focalisée sur un enjeu matériel : les
+                                routes.
+                            </p>
+                        </div>
+
+                        <div class="content-bottom"
+                            style="padding:30px 40px;background-color:white;height:60vh;display: flex;justify-content: center;">
+                            <img src="Figures/risk_fig.png" alt="figure risque" style="width: 90%;object-fit:contain;">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide"
+                        style="display: flex;flex-direction: column;align-content: center;align-items: center;justify-content: space-between;height: 95vh;">
+                        <div class="content-top" style="height: 21vh;">
+                            <h3>Indice</h3>
+
+                            <p class="proj-desc">
+                                Afin de caractériser cette vulnérabilité, deux indices ont été produits, le premier,
+                                à l'échelle départemental et le deuxième à l'échelle local.
+                            </p>
+                        </div>
+
+                        <div class="content-bottom"
+                            style="padding:30px 40px;color:white;height:28vh;position:relative;">
+                            <div style="display:flex; justify-content:center; flex-direction:row;">
+                                <div style="width:45%">
+                                    <h4 style="margin-bottom: 18px;">Indice départemental</h4>
+
+                                    <p class="proj-desc" style="font-size: 90%;margin-bottom:0;">
+                                        L’indice départemental compile une batterie d'indicateurs produits à partir de
+                                        données disponibles pour l'ensemble
+                                        du Finistère. L'ensemble des indicateurs a été produit sous SIG.
+                                    </p>
+                                </div>
+
+                                <div style="width:45%; margin-left:10%;">
+                                    <h4 style="margin-bottom: 18px;">Indice Local</h4>
+
+                                    <p class="proj-desc" style="font-size: 90%; margin-bottom:0;">
+                                        L'objectif de l'indice local est de pallier le manque de précision de l'indice
+                                        départemental par une évaluation
+                                        des aléas, des enjeux et de la gestion sur le terrain.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div style="padding-top: 2%;padding-left:30px;padding-bottom: 5%;">
+                            <p class="proj-desc" style="margin-bottom: 0;">
+                                La vulnérabilité d’un tronçon de route côtière apparaît
+                                essentiellement fonction de plusieurs caractéristiques : a) les caractères et la dynamique du
+                                milieu littoral qu’elle traverse ou qu’elle longe, b) des moyens de protection contre la mer déjà
+                                mis en place, c) mais également de l’importance de la route pour le gestionnaire et le trafic
+                                routier qui emprunte ce tronçon et, de ce fait, c) du contournement qu’il serait nécessaire de
+                                proposer aux utilisateurs si celui-ci n’était plus fonctionnel du fait de l’érosion de la côte et/ou de
+                                sa submersion temporaire.
+                            </p>
+                        </div> -->
+
+                        <div style="width: 100%;padding:20px 40px;">
+                            <p class="proj-desc" style="margin-bottom: 0;padding-bottom:2%">
+                                Indicateurs de l'indice départemental
+                            </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Composantes </th>
+                                        <th>Thèmes </th>
+                                        <th>Indicateurs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="4" class="border-bot">Aléa</td>
+                                        <td rowspan="2" class="border-bot">Érosion</td>
+                                        <td>Distance du trait de côte au tronçon</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bot">Nature du trait de côte</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bot">Submersion</td>
+                                        <td class="border-bot">Hauteur d'eau sur le tronçon</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border-bot">Les deux</td>
+                                        <td class="border-bot">Présence d'un ouvrage de protection</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">Enjeu</td>
+                                        <td rowspan="3">Réseau</td>
+                                        <td>Trafic sur le tronçon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Valeur stratégique du tronçon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Distance du contournement</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="routes-heau" class="swiper-slide">
+                        <div class="content-top-example">
+                            <h3 class="green">Exemple : traitement de l'indicateur de hauteur d'eau potentielle sur la route</h3>
+
+                            <h4 style="margin-bottom:4.5%;">
+                                <a id="id-heau-desc" class="underline" href="#heau-desc">Description</a> → <a
+                                    id="id-heau-data" href="#heau-data">Data</a> → <a id="id-heau-trait"
+                                    href="#heau-trait">Traitements</a>
+                            </h4>
+                        </div>
+
+                        <div id="heau-desc" class="content-bottom-example" style="display: block;">
+                            <div>
+                                <p class="proj-desc">
+                                    Indicateur de l'indice départemental, son objectif est de fournir un aperçu de la
+                                    vulnérabilité des routes départementales lors d'un épisode
+                                    de submersion marine extrême aux horizons 2052 et 2122. La hauteur d'eau potentielle
+                                    sur la route est utilisée
+                                    pour quantifier cette vulnérabilité : plus la lame d'eau sur la route sera haute,
+                                    plus le trafic sera entravé et plus la
+                                    vulnérabilité sera importante.
+                                </p>
+
+                                <div
+                                    style="background-color: #007478; color:white; position:absolute; bottom:0; width:60vw;height: 50vh;left: 0;padding: 30px 40px; display:flex;align-content: center;">
+                                    <div style="width:49%">
+                                        <h3>Méthodologie</h3>
+
+                                        <p class="proj-desc" style="padding: 0px;width: 100%;margin-bottom: 0;">
+                                            Un niveau d'eau sur les routes départementales du Finistère est modélisé
+                                            à partir d'un niveau marin de référence à l'horizon 2052 et 2122 et de
+                                            l'altitude des routes calculées à partir d'un Modèle Numérique de Terrain
+                                            (MNT)
+                                            haute résolution (1 m)
+                                        </p>
+                                    </div>
+
+                                    <div style="width:44%;display:flex;">
+                                        <img src="Figures/calcul_sub_inf-06.png" alt="methodo fig"
+                                            style="width: 100%; object-fit:contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="heau-data" class="content-bottom-example">
+                            <div class="data-circle-container" style="top:3%;left:5%;">
+                                <div class="data-circle" style="width: 220px; height: 220px;">
+                                    <p>
+                                        MNT haute <br>
+                                        résolution
+                                    </p>
+                                </div>
+                                <p>
+                                       <b>Donnée :</b> Dalles litto3D du Finistère (n = 3 851)<br>
+                                       <b>Type :</b> raster <br>
+                                       <b>Résolution :</b> 1 m <br>
+                                       <b>Fournisseurs :</b> IGN/SHOM
+                                </p>
+                            </div>
+
+                            <div class="data-circle-container" style="top:61%;left:8%;">
+                                <div class="data-circle" style="width: 165px; height: 165px;">
+                                    <p>
+                                        MNT basse <br>
+                                        résolution
+                                    </p>
+                                </div>
+                                <p>
+                                       <b>Donnée :</b> Dalles BDAlti du Finistère (n = 25) <br>
+                                       <b>Type :</b> raster <br>
+                                       <b>Résolution :</b> 25 m <br>
+                                       <b>Fournisseurs :</b> IGN
+                                </p>
+                            </div>
+
+                            <div class="data-circle-container" style="top:64%;left:57%;">
+                                <div class="data-circle" style="width: 175px; height: 175px;">
+                                    <p>
+                                        Tronçons <br>
+                                        de route
+                                    </p>
+                                </div>
+                                <p>
+                                       <b>Donnée :</b> BDTopo<br>
+                                       <b>Type :</b> vectoriel (polyligne) <br>
+                                       <b>Fournisseurs :</b> IGN
+                                </p>
+                            </div>
+
+                            <div class="data-circle-container" style="top:23%;left:43%;">
+                                <div class="data-circle" style="width: 180px; height: 180px;">
+                                    <p>
+                                        Niveaux Marins <br>
+                                        Extrêmes
+                                    </p>
+                                </div>
+                                <p>
+                                       <b>Donnée :</b> Niveaux Marins extrêmes centennaux<br>
+                                       <b>Type :</b> vectoriel (polyligne) <br>
+                                       <b>Fournisseurs :</b> SHOM/CEREMA
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="heau-trait" class="content-bottom-example">
+                            <div id="heau-trait-pre1" class="trait-slide-contain" style="display: block;">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <h5>Prétraitement : identification des dalles litto3D</h5>
+
+                                        <p class="proj-desc" style="margin-bottom: 0px;">
+                                            Identification des dalles litto3D qui seront utilisées par la suite
+                                            à l'aide d'une zone de submersion préliminaire sur les dalles BDAlti.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#" style="color: white;">←</a> <a href="#heau-trait-pre2">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide">
+                                    <div style="width: 42%;">
+                                        <p class="proj-desc-sub">
+                                            Les routes submergées par cette première zone de submersion sont utilisées
+                                            pour identifées les dalles litto3D qui les intersectent. Ces dalles ne sont
+                                            pas importées directement dans le projet en raison de leur poids ;
+                                            un index de tuile est créé. <br>
+                                            <br>
+                                            À aucun moment les dalles ne sont importées dans l'interface. L'ensemble des
+                                            traitements
+                                            est réalisé à l'aide de scripts python.
+                                        </p>
+                                    </div>
+
+                                    <div id="finis-sub-alti" style="width: 55%">
+                                        <img src="Figures/finis_sub_alti.png" alt="submersion bdalti"
+                                            style="width: 100%;object-fit: contain;height: 95%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="heau-trait-pre2" class="trait-slide-contain">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <h5>Prétraitement : calcul des Niveaux Marins de Référence (NMR)</h5>
+
+                                        <p class="proj-desc" style="margin-bottom: 0px;">
+                                            Un Niveau Marin de Référence (NMR) correspond à la valeur de hauteur d'eau
+                                            utilisée pour modéliser la submersion sur une zone donnée.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#heau-trait-pre1">←</a> <a href="#heau-trait-calc">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide">
+                                    <div style="width: 42%;">
+                                        <p class="proj-desc-sub">
+                                            Ces niveaux sont calculés sur la base des Niveaux Marins Centennaux (NMC) du
+                                            CEREMA et
+                                            des modélisations du GIEC (AR6, 2021) sur l'élévation du niveau marin pour
+                                            un scénario SSP 8.5 au
+                                            port de Brest. <br>
+                                            <br>
+                                            Les zones de NMR sont numérisée en fonction de la variation des NMC et de la
+                                            localisation
+                                            des dalles litto3D préalablement identifiées.
+                                        </p>
+                                    </div>
+
+                                    <div id="zones-nmr" style="width: 55%">
+                                        <img src="Figures/zone_NMR.png" alt="submersion bdalti"
+                                            style="width: 100%;object-fit: contain;height: 95%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="heau-trait-calc" class="trait-slide-contain">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <h5>Estimation de la hauteur sur les routes en 2052 et 2122</h5>
+
+                                        <p class="proj-desc" style="margin-bottom: 0px;">
+                                            La hauteur d'eau sur un tronçon de route est estimée par différence entre
+                                            l'altitude
+                                            minimale du tronçon et la valeur du NMR de la zone.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#heau-trait-pre2">←</a> <a href="#heau-trait-ind">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide">
+                                    <div style="width: 42%;">
+                                        <p class="proj-desc-sub" style="z-index: 1;position: fixed;width: 43%;">
+                                            Une chaîne de traitement réalisée à l'aide du modelleur graphique de QGIS
+                                            est réalisé
+                                            et lancé par lot sur l'ensemble des zones de NMR pour 2052 et 2122. <br>
+                                            <br>
+                                            Vous pouvez télécharger le schéma du modèle en cliquant sur ce
+                                            <a href="Figures/model_h_eau.png" download>lien</a>
+                                        </p>
+                                    </div>
+
+                                    <div style="width: 55%">
+                                        <img src="Figures/calcul_sub-03-03.png" alt="submersion bdalti"
+                                            style="width: 104%;position: absolute;bottom: 0px;right: 0px;z-index: 0;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="heau-trait-ind" class="trait-slide-contain">
+                                <div class="trait-div-slide" style="padding-bottom: 0;">
+                                    <div class="trait-div-slide-text">
+                                        <h5>Attribution des classes de vulnérabilité</h5>
+
+                                        <p class="proj-desc" style="margin-bottom: 0px;">
+                                            Les couches produites par le modèle sont regroupées et des classes de
+                                            vulnérabilité sont
+                                            attribuées.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#heau-trait-calc">←</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide" style="display: block;">
+                                    <div style="width: 70%;">
+                                        <p class="proj-desc-sub">
+                                            On considère qu'à une hauteur
+                                            d'eau supérieure à 10 cm, la route devient impraticable pour une grande
+                                            majorité de véhicules,
+                                            au-dessus de 50 cm il n'est plus possible de l'emprunter.
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        style="width: 100%;display: flex;align-content: center;justify-content: center;padding-top: 6%;">
+                                        <img src="Figures/classe_vuln_sub-04.png" alt="submersion bdalti"
+                                            style="width: 70%;object-fit:contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="swiper-slide">
+                        <div class="content-top-example">
+                            <h3 class="green">Exemple : traitement de l'indicateur de distance du contournement</h3>
+
+                            <h4 style="margin-bottom:4.5%;">
+                                <a id="id-dev-desc" class="underline" href="#dev-desc">Description</a> → <a
+                                    id="id-dev-data" href="#dev-data">Data</a> → <a id="id-dev-trait"
+                                    href="#dev-trait">Traitements</a>
+                            </h4>
+                        </div>
+
+
+                        <div id="dev-desc" class="content-bottom-example" style="display: block;">
+                            <div id="dev-desc1" class="trait-slide-contain" style="display: block;">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <p class="proj-desc" style="margin-bottom:0;">
+                                            La distance du contournement détermine l'isolement dans le réseau d'un
+                                            tronçon de route touché
+                                            par un aléa (érosion ou submersion). Plus la distance pour contourner la
+                                            section de route est longue, plus la
+                                            vulnérabilité des tronçons concernés par ledit aléa sera importante, <i>a
+                                                fortiori</i>, quand aucun
+                                            contournement n'est envisageable, la vulnérabilité est maximale.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#" style="color: white;">←</a> <a href="#dev-desc2">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide">
+                                    <div
+                                        style="background-color: #007478; color:white; position:absolute; bottom:0; width:60vw;height: 50vh;left: 0;padding: 30px 40px;">
+                                        <div>
+                                            <h3>Méthodologie</h3>
+
+                                            <p class="proj-desc" style="padding: 0px;">
+                                                Afin de déterminer les points de départ et d'arrivée du contournement,
+                                                des entités spatiales
+                                                correspondant aux tronçons touchés par un aléa et regroupés par
+                                                contiguïté (nommées « route
+                                                aléa ») sont construites. <br>
+                                                Les extrémités de ces entités sont utilisées comme point de départ et
+                                                d'arrivée du
+                                                contournement. Si une déviation est possible, en utilisant le réseau
+                                                départemental non
+                                                touchés par les aléas, la distance du contournement est reportée dans la
+                                                couche finale de
+                                                l'indicateur : tous les tronçons contenus dans l'entité spatiale
+                                                précédemment créée posséderont
+                                                la même valeur de distance de déviation.
+                                            </p>
+                                        </div>
+
+                                        <!-- <div  width="334.5" height="334.469" viewBox="0 0 334.5 334.469">      
+                                            <svg id="id-path-dev" viewBox="0 0 550 125">
+                                                <path d="M 0 0 L 0 4 L -2 4 L -2 7 L 0 7 M 0 7 L 0 11"></path>
+                                            </svg>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="dev-desc2" class="trait-slide-contain">
+                                <div class="trait-div-slide" style="padding-bottom: 0;">
+                                    <div class="trait-div-slide-text"
+                                        style="padding-bottom: 1%;display: flex;align-items: center;">
+                                        <p class="proj-desc" style="margin-bottom:0;">
+                                            La figure ci-dessous récapitule la méthode employée.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button" style="padding-bottom: 1%;">
+                                        <p><a href="#dev-desc1">←</a></p>
+                                    </div>
+                                </div>
+
+                                <div id="dev-alea-fig" class="trait-div-slide"
+                                    style="width:100%;height: 83%;padding-top: 0;padding: 0;">
+                                    <img src="Figures/contourn_alea_1.png" alt="contourn-alea" ,
+                                        style="width: 100%; object-fit:contain;">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="dev-data" class="content-bottom-example">
+                            <div class="data-circle-container" style="top:3%;left:5%;">
+                                <div class="data-circle2" style="width: 220px; height: 220px;">
+                                    <p>
+                                        Tronçons de route <br>
+                                        touchés par un aléa
+                                    </p>
+                                </div>
+                                <p>
+                                       <b>Type :</b> vectoriel polyligne<br>
+                                       <b>Fournisseurs :</b> couche issue de traitements antérieures
+                                </p>
+                            </div>
+
+                            <div class="data-circle-container" style="top:24%;left:48%;">
+                                <div class="data-circle2" style="width: 200px; height: 200px;">
+                                    <p>
+                                        Réseau des routes <br>
+                                        départementales
+                                    </p>
+                                </div>
+                                <p>
+                                       <b>Donnée :</b> BDTopo<br>
+                                       <b>Type :</b> vectoriel (polyligne)<br>
+                                       <b>Fournisseurs :</b> IGN
+                                </p>
+                            </div>
+
+                            <div class="data-circle-container" style="top:65%;left:18%;">
+                                <div class="data-circle2" style="width: 175px; height: 175px;">
+                                    <p>
+                                        Zones de <br>
+                                        submersion
+                                    </p>
+                                </div>
+                                <p>
+                                       <b>Type :</b> vectoriel (polygone)<br>
+                                       <b>Fournisseurs :</b> couche issue de traitements antérieures
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="dev-trait" class="content-bottom-example">
+
+                            <div id="dev-trait-desc" class="trait-slide-contain" style="display: block;">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <h5>Les étapes du traitement</h5>
+
+                                        <p class="proj-desc" style="margin-bottom:0;">
+                                            Les traitements nécessaire à l'élaboration de cet indicateur nécessitent de
+                                            produire un script processing.
+                                            Un plugin a été créé afin d'en faciliter l'utilisation par les utilisateurs.
+                                            <br>
+                                            Vous pouvez le télécharger
+                                            à l'aide de ce <a href="DATA/bypass_hazards.zip" download>lien</a>.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#" style="color:white">→</a> <a href="#dev-trait-ind">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide"
+                                    style="background-color: #007478;position: absolute;width: 100%;height: 66%;bottom: 0;">
+                                    <div style="display: flex; align-items: center;">
+                                        <div>
+                                            <p class="proj-desc-sub" style="color: white;">
+                                                Le plugin effectue les traitements suivants pour chaque horizon
+                                                temporel :
+                                            </p>
+
+                                            <ol style="color: white;">
+                                                <li>Extraction des tronçons de routes touchées et non touchées par les
+                                                    aléas</li>
+                                                <li>Création des entités de routes touchées par un même aléa local</li>
+                                                <li>Passage de l'ID des entités créées aux tronçons touchées par un aléa
+                                                    dans le réseau complet</li>
+                                                <li>Extraction des points de départ et d'arrivée des contournements</li>
+                                                <li>Nettoyage des couches de points</li>
+                                                <li>Calcul des déviations</li>
+                                                <li>Calcul de la longueur des déviations</li>
+                                                <li>Passage des longueurs de déviations aux couches de routes</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="dev-trait-ind" class="trait-slide-contain">
+                                <div class="trait-div-slide" style="padding-bottom: 0;">
+                                    <div class="trait-div-slide-text">
+                                        <h5>Attribution des classes de vulnérabilité</h5>
+
+                                        <p class="proj-desc" style="margin-bottom: 0px;">
+                                            Le calibrage se base sur la distance du contournement calculée à l'aide du
+                                            plugin. Plus le
+                                            contournement sera long plus la vulnérabilité sera forte. Si aucun
+                                            contournement n'est possible,
+                                            la vulnérabilité est maximale.
+                                        </p>
+                                    </div>
+
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#dev-trait-desc">←</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide" style="display: block;">
+                                    <div
+                                        style="width: 100%;display: flex;align-content: center;justify-content: center;padding-top: 6%;">
+                                        <img src="Figures/calcul_dev-05.png" alt="class dev"
+                                            style="width: 70%;object-fit:contain;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div id="dev-trait-dev" class="trait-slide-contain">
+                                <div class="trait-div-slide">
+                                    <div class="trait-div-slide-text">
+                                        <h5>Les couches en sorties</h5>
+
+                                        <p class="proj-desc" style="margin-bottom:0;">
+                                            Le plugin renvoie six couches et plusieurs dossiers contenants les couches de points et
+                                            de déviations générées durant l'exécution.
+                                        </p>
+                                    </div>
+    
+                                    <div class="trait-div-slide-button">
+                                        <p><a href="#dev-trait-desc">←</a> <a href="#dev-trait-ind">→</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="trait-div-slide">
+                                    <div style="display: flex; align-items: center;">
+                                        <p class="proj-desc-sub">
+                                            Le plugin effectue les traitements suivants pour chaque horizon temporel :
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h3>Compétences techniques développées</h3>
+
+                            <h4>Géomatique</h4>
+                            <ul>
+                                <li>Élaboration de méthodologies reproductibles sous SIG</li>
+                                <li>Travail avec des données volumineuses</li>
+                                <li>ModelBuilder sous QGIS</span></li>
+                                <li>Chaîne de traitement avec PyQGIS</li>
+                                <li>Conception d'un plugin avec PyQGIS</li>
+                                <li>Traitement de données spatiales sous R (package sf)</li>
+                                <li>Utilisation de PostGIS en local</li>
+                            </ul>
+
+                            <h4>Autre</h4>
+                            <ul>
+                                <li>Conception d'un pas à pas de traitement SIG</li>
+                            </ul>
+
+                            <div id="legend-code" class="legend"
+                                style="position: absolute; bottom:5%;width: 43%; right: 43%;">
+                                <p>
+                                    Extrait de l'algorithme de calcul des contournements
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="dev-script" class="content-right" style="background-color: white;overflow:hidden;">
+                            <img src="Figures/script_dev.png" alt="deviation script" style="height: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALLERY APIs -->
+            <div id="api" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content-top">
+                            <h2>Galerie dynamique Twitter & Facebook</h2>
+
+                            <p class="proj-date"><span class="green">2022 → Présent</span> • Par ailleurs...</p>
+
+                            <p class="proj-desc">
+                                Utilisation des APIs Twitter et Facebook afin de produire une galerie de tweets ou
+                                de photos associée à un compte utilisateur. Projet d'entraînement au développement web,
+                                notamment en php,
+                                et à la gestion de base de données. Le site est toujours en conception.
+                            </p>
+                        </div>
+
+                        <div class="content-bottom"
+                            style="height:55vh;display: flex;justify-content: center;background-color: white;position: absolute;bottom: 4%;">
+                            <video src="Figures/gallery_movie.mp4" autoplay loop height="100%"></video>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-top">
+                            <p>Méthodo</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h3>Compétences techniques développées</h3>
+
+                            <h4>Base de données</h4>
+                            <ul>
+                                <li>Utilisaition des APIs Twitter et Facebook</li>
+                                <li>Utilisation de MySQL</li>
+                            </ul>
+
+                            <h4>Développement web</h4>
+                            <ul>
+                                <li>WampServer</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>php</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="content-right">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <!-- SLIDER -->
+            <div id="slider-div-carto" class="content">
+                <div id="slider-carto">
+                    <ul>
+                        <li id="tasmanSlide" class="tasman-slide">
+                            <img src="figures/CartoGeomorpho_Tasman_Glacier.png" id="tasmanImg" alt="tasman-Glacier"
+                                class="slide-img">
+
+                            <a href="#daoulas-nav"></a>
+
+                            <!-- Modal -->
+                            <div id="tasmanModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="tasmanZoom-in"><a href="#">+</a></button>
+                                        <button id="tasmanZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        Morphologies glaciaires et périglaciaires
+                                    </p>
+                                </div>
+
+                                <div id='tasmanWrapper' class="modal-content">
+                                    <img id="tasmanImgModal" class="modal-image">
+                                </div>
+
+                                <button id="tasmanClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                        <li id="damntSlide" class="damnt-slide">
+                            <img src="figures/mnt_daoulas.png" id="damntImg" alt="daoulas mnt"
+                                class="slide-img">
+
+                            <!-- Modal -->
+                            <div id="damntModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="damntZoom-in"><a href="#">+</a></button>
+                                        <button id="damntZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        Topographie de la Daoulas et de ses environs.
+                                    </p>
+                                </div>
+
+                                <div id='damntWrapper' class="modal-content">
+                                    <img id="damntImgModal" class="modal-image">
+                                </div>
+
+                                <button id="damntClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                        <li id="radeSlide" class="rade-slide">
+                            <img src="figures/mnt_carto_v2-01.png" id="radeImg" alt="rade-Glacier" class="slide-img">
+
+                            <a href="#rade-nav"></a>
+
+                            <!-- Modal -->
+                            <div id="radeModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="radeZoom-in"><a href="#">+</a></button>
+                                        <button id="radeZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        Bassin versant de la rade de Brest
+                                    </p>
+                                </div>
+
+                                <div id='radeWrapper' class="modal-content">
+                                    <img id="radeImgModal" class="modal-image">
+                                </div>
+
+                                <button id="radeClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                        <li id="platierSlide" class="platier-slide">
+                            <img src="figures/CartoGeomorpho_Platier.png" id="platierImg" alt="platier-Glacier"
+                                class="slide-img">
+
+                            <a href="#platier-nav"></a>
+
+                            <!-- Modal -->
+                            <div id="platierModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="platierZoom-in"><a href="#">+</a></button>
+                                        <button id="platierZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        Carte géomorphologique
+                                    </p>
+                                </div>
+
+                                <div id='platierWrapper' class="modal-content">
+                                    <img id="platierImgModal" class="modal-image">
+                                </div>
+
+                                <button id="platierClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <button class="prev"><a href="#"> ← </a></button>
+                    <button class="next"><a href="#"> → </a></button>
+                </div>
+
+                <!-- CAPTION -->
+                <div id="slider-caption">
+                    <div id="slider-caption-sub">
+                        <div id="tasmanDesc" class="desc-slider">
+                            <p>
+                                Carte géomorphologique de la partie basale et du lac proglaciaire du <i>debris-covered
+                                    glacier</i> de Tasman (Nouvelle-Zélande)
+                            </p>
+                            <p style="font-weight: 300;">
+                                <i>2021 | QGIS • Adobe Illustrator</i>
+                            </p>
+                        </div>
+
+                        <div id="damntDesc" class="desc-slider">
+                            <p>
+                                Topographie de Daoulas
+                            </p>
+                            <p style="font-weight: 300;">
+                                <i>2021 | QGIS • Adobe Illustrator</i>
+                            </p>
+                        </div>
+
+                        <div id="radeDesc" class="desc-slider">
+                            <p>
+                                Bassin-versant de la rade de Brest
+                            </p>
+
+                            <p style="font-weight: 300;">
+                                <i>2022 | QGIS • Adobe Illustrator</i>
+                            </p>
+                        </div>
+
+                        <div id="platierDesc" class="desc-slider">
+                            <p>
+                                Carte géomorphologique de la partie occidentale de la plateforme à écueil de
+                                Plouguerneau (29)
+                            </p>
+
+                            <p style="font-weight: 300;">
+                                <i>2020 | Adobe Illustrator</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDER AUTRES -->
+            <div id="slider-div-autre" class="content">
+                <div id="slider-carto">
+                    <ul>
+                        <li id="daoulasSlide" class="daoulas-slide">
+                            <img src="figures/daoulas_garde_rogn.png" id="daoulasImg" alt="daoulas-Glacier"
+                                class="slide-img">
+
+                            <a href="#daoulas-nav"></a>
+
+                            <!-- Modal -->
+                            <div id="daoulasModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="daoulasZoom-in"><a href="#">+</a></button>
+                                        <button id="daoulasZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        L’illustration s'appuie sur la chorématique. La structure de la commune est
+                                        caractérisée par ses flux tant physiques (rivière et marée) qu'anthropiques
+                                        (route nationale à l'Est orientée N-S et route départementale sur un axe
+                                        NNW-SSE). Située au Nord du centre-ville, l'abbaye de Daoulas est le seul pôle
+                                        de la ville, son rayonnement est départementale. La partie Sud-Ouest de la
+                                        commune est distinguée par son activité agricole.
+                                    </p>
+                                </div>
+
+                                <div id='daoulasWrapper' class="modal-content">
+                                    <img id="daoulasImgModal" class="modal-image">
+                                </div>
+
+                                <button id="daoulasClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                        <li id="bathySlide" class="bathy-slide">
+                            <img src="figures/Bathy_DEM_RGBtiff_OneBandTiff.png" id="bathyImg" alt="bathy-Glacier"
+                                class="slide-img">
+
+                            <a href="#bathy-nav"></a>
+
+                            <!-- Modal -->
+                            <div id="bathyModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="bathyZoom-in"><a href="#">+</a></button>
+                                        <button id="bathyZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        La couche utilisée est celle d'EDMONET.
+                                    </p>
+                                </div>
+
+                                <div id='bathyWrapper' class="modal-content">
+                                    <img id="bathyImgModal" class="modal-image">
+                                </div>
+
+                                <button id="bathyClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                        <li id="posterSlide" class="bathy-slide">
+                            <img src="figures/gnsy_poster_stage_V3.png" id="posterImg" alt="poster gsny"
+                                class="slide-img">
+
+                            <!-- Modal -->
+                            <div id="posterModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="posterZoom-in"><a href="#">+</a></button>
+                                        <button id="posterZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        La couche utilisée est celle d'EDMONET.
+                                    </p>
+                                </div>
+
+                                <div id='posterWrapper' class="modal-content">
+                                    <img id="posterImgModal" class="modal-image">
+                                </div>
+
+                                <button id="posterClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                        <li id="contratSlide" class="bathy-slide">
+                            <img src="figures/contrat_rade_diapo.png" id="contratImg" alt="contrat diapo"
+                                class="slide-img">
+
+                            <!-- Modal -->
+                            <div id="contratModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="contratZoom-in"><a href="#">+</a></button>
+                                        <button id="contratZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        La couche utilisée est celle d'EDMONET.
+                                    </p>
+                                </div>
+
+                                <div id='contratWrapper' class="modal-content">
+                                    <img id="contratImgModal" class="modal-image">
+                                </div>
+
+                                <button id="contratClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+
+                        <li id="dodSlide" class="bathy-slide">
+                            <img src="figures/dod_diff.png" id="dodImg" alt="dod diff"
+                                class="slide-img">
+
+                            <!-- Modal -->
+                            <div id="dodModal" class="modal">
+                                <div class="container-zoom-desc">
+                                    <div class="container-zoom">
+                                        <button id="dodZoom-in"><a href="#">+</a></button>
+                                        <button id="dodZoom-out"><a href="#">–</a></button>
+                                    </div>
+
+                                    <p style="font-weight: 300;">
+                                        La couche utilisée est celle d'EDMONET.
+                                    </p>
+                                </div>
+
+                                <div id='dodWrapper' class="modal-content">
+                                    <img id="dodImgModal" class="modal-image">
+                                </div>
+
+                                <button id="dodClose" class="close"><a href="#">&times;</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="prev"><a href="#"> ← </a></button>
+                    <button class="next"><a href="#"> → </a></button>
+                </div>
+
+                <!-- CAPTION -->
+                <div id="slider-caption">
+                    <div id="slider-caption-sub">
+                        
+                        <div id="daoulasDesc" class="desc-slider">
+                            <p>
+                                Représentation graphique de la structure spatiale de Daoulas (29)
+                            </p>
+
+                            <p style="font-weight: 300;">
+                                <i>2021 | Adobe Illustrator</i>
+                            </p>
+                        </div>
+
+                        <div id="bathyDesc" class="desc-slider">
+                            <p>
+                                Bathymétrie de la Manche, du Golfe de Gascogne et d'une partie de la mer Celtique issue
+                                d'un calcul raster • Le résultat a été conservé pour son esthétique
+                            </p>
+
+                            <p style="font-weight: 300;">
+                                <i>2020 | QGIS</i>
+                            </p>
+                        </div>
+
+                        <div id="posterDesc" class="desc-slider">
+                            <p>
+                                Eutrophisation de l'étang et du marais du Curnic. Poster de stage, M1 EGEL.
+                            </p>
+
+                            <p style="font-weight: 300;">
+                                <i>2022 | QGIS, Photoshop & Illustrator</i>
+                            </p>
+                        </div>
+
+                        <div id="contratDesc" class="desc-slider">
+                            <p>
+                                Page de garde du diaporama de la table ronde : Un nouveau Contrate de Baie pour une
+                                trajectoire de la rade de Brest plus soutenable ?
+                            </p>
+
+                            <p style="font-weight: 300;">
+                                <i>2022 | QGIS, Illustrator & Indesign</i>
+                            </p>
+                        </div>
+
+                        <div id="dodDesc" class="desc-slider">
+                            <p>
+                                Différence de MNT (détail), Katlarauhn — Islande
+                            </p>
+
+                            <p style="font-weight: 300;">
+                                <i>2023 | QGIS</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- CURRICULUM   -->
+
+            <!-- FORMATIONS -->
+            <div id="cv" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content-cv">
+                            <div id="container-info" class="container-base">
+                                <h2>Formation</h2>
+
+                                <div class="grid-container">
+                                    <div id="grid-item-1" class="grid-item">
+                                        <div>
+                                            <div class="date-child">
+                                                2023<br>
+                                                —<br>
+                                                2021
+                                            </div>
+
+                                            <div class="texte-child">
+                                                <h3>Master Expertise et Gestion de l'Environnement Littoral (EGEL)</h3>
+
+                                                <div class="container-form-corp">
+                                                    <div class="container-etab">
+                                                        <ul>
+                                                            <li>Université de Bretagne Occidentale (UBO), Brest</li>
+                                                            <li>Institut Universitaire Européen de la Mer (IUEM),
+                                                                Plouzané</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div id="grid-item-2" class="grid-item">
+                                        <div>
+                                            <div class="date-child">
+                                                2021<br>
+                                                —<br>
+                                                2018
+                                            </div>
+
+                                            <div class="texte-child">
+                                                <h3>Licence Géographie et Aménagement parcours Mer, Environnement,
+                                                    Tourisme,
+                                                    Aménagement, Littoral (METAL)</h3>
+
+                                                <div class="container-form-corp">
+                                                    <div class="container-etab">
+                                                        <ul>
+                                                            <li>Université de Bretagne Occidentale (UBO), Brest</li>
+                                                            <li>Faculté des Lettres et Sciences humaines Victor Segalen,
+                                                                Brest</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div id="grid-item-3" class="grid-item">
+                                        <div>
+                                            <div class="date-child">
+                                                2018<br>
+                                                —<br>
+                                                2016
+                                            </div>
+
+                                            <div class="texte-child">
+                                                <h3>BAC Technique de la Musique et de la Danse (TMD)</h3>
+
+                                                <div class="container-form-corp">
+                                                    <div class="container-etab">
+                                                        <ul>
+                                                            <li>Lycée Estran Fénélon, Brest</li>
+                                                            <li>Conservatoire de musique, danse et art dramatique à
+                                                                rayonnement régional de Brest</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-bande-1">
+                            <div class="animate-container">
+                                <div id="circle1" class="circle"></div>
+                                <div id="circle2" class="circle2"></div>
+                                <div id="circle3" class="circle"></div>
+                                <div id="circle4" class="circle3"></div>
+                                <div id="circle5" class="circle3"></div>
+                            </div>
+
+                            <div id="desc-egel" class="desc-form-1">
+                                <p>
+                                    EGEL (« Expertise et Gestion de l’Environnement Littoral ») est l’une des huit
+                                    mentions du domaine « Sciences de la mer et du littoral » de l’Institut
+                                    Universitaire Européen de la Mer (UBO, Brest). Créée en 2000, elle est,
+                                    historiquement, l’une des premières formations spécialisées sur la gestion de
+                                    l’environnement littoral et marin en France avec un réseau de plus de 500 alumni
+                                    formés sur les 20 dernières années.
+                                </p>
+                            </div>
+
+                            <div id="desc-tmd" class="desc-form-1">
+                                <p>
+                                    Le BAC Technique de la Musique et de la Danse (TMD), aujourd’hui
+                                    remplacé par le BAC S2TMD, propose une formation technique spécialisée
+                                    dans l'apprentissage de la musique ou de la danse. Les cours sont
+                                    dispensés au lycée et au conservatoire où l'étudiant choisi sa discipline
+                                    de prédilection en plus d'un tronc commun suivis par les musiciens ou
+                                    les danseurs. <br>
+                                    <br>
+                                    Après une seconde générale, j'ai intégré la formation en première où je
+                                    me suis spécialisé dans l'étude du jazz et de la musique savante
+                                    occidentale.
+                                </p>
+                            </div>
+
+                            <div id="desc-lic" class="desc-form-1">
+                                <p>
+                                    La licence Géographie et Aménagement parcours Mer, Environnement,
+                                    Tourisme, Aménagement, Littoral (METAL) proposée par l'Université de Bretagne
+                                    Occidentale
+                                    développe des compétences théoriques et pratiques dans les domaines de
+                                    la
+                                    géographie et de l'aménagement du territoire avec une spécialisation sur
+                                    la
+                                    thématique du littoral croissante au cours de la formation. <br>
+                                    <br>
+                                    Le diplômé dispose de connaissances pluridisciplinaires nécessaires à la
+                                    compréhension des structures et des dynamiques spatiales d'un espace
+                                    donné.
+                                    Son
+                                    savoir faire technique en géomatique, statistiques et cartographie lui
+                                    permet de
+                                    mettre en oeuvre des analyses poussées et de représenter graphiquement
+                                    les
+                                    résultats obtenus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STAGE / TRAVAUX SAISONNIER -->
+                    <div id="slide1" class="swiper-slide">
+                        <div class="content-stage" style="height:50vh">
+                            <div id="container-info" class="container-base">
+                                <h2>Expérience Professionnelle</h2>
+
+                                <h3><a id="id-grid-stage" class="underline" href="#">Stages</a> / <a id="id-grid-trav"
+                                        href="#">Travail saisonnier</a>
+                                </h3>
+
+                                <div style="display: flex;">
+                                    <div id="grid-stage">
+                                        <div class="grid-container-2">
+                                            <div id="grid-hydro" class="grid-item-hor">
+                                                <div class="texte-child-hor">
+                                                    <div class="container-form-corp">
+                                                        Stage de Master 2 EGEL
+                                                    </div>
+
+                                                    <h3>Études des conditions hydrodynamiques le long des côtes de la
+                                                        presqu'île de Reykjanes en Islande</h3>
+                                                </div>
+                                            </div>
+
+                                            <div id="grid-curnic" class="grid-item-hor">
+                                                <div class="texte-child-hor">
+                                                    <div class="container-form-corp">
+                                                        Stage de Master 1 EGEL
+                                                    </div>
+
+                                                    <h3>Étude globale de l’étang lagunaire du Curnic en vue de renforcer
+                                                        ses
+                                                        capacités épuratoire et d’accueil de la biodiversité remarquable
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div id="grid-l3" class="grid-item-hor">
+                                                <div class="texte-child-hor">
+                                                    <div class="container-form-corp">
+                                                        Stage volontaire de fin de licence
+                                                    </div>
+
+                                                    <h3>Missions de terrains en géomorphologie et traitement de données
+                                                        en
+                                                        laboratoire
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="grid-trav" style="display: none;">
+                                        <div class="grid-container-2">
+                                            <div id="grid-rade" class="grid-item-hor">
+                                                <div class="texte-child-hor">
+                                                    <div class="container-form-corp">
+                                                        2020
+                                                    </div>
+
+                                                    <h3>Service de rade au port de Sainte-Marine</h3>
+                                                </div>
+                                            </div>
+
+                                            <div id="grid-dech" class="grid-item-hor">
+                                                <div class="texte-child-hor">
+                                                    <div class="container-form-corp">
+                                                        2019 — 2018
+                                                    </div>
+
+                                                    <h3>Agent de collecte des déchets en pays bigouden sud</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="content-bande-2" style="height:50vh;width:100%;position:absolute;bottom:0;background-color:white;">
+                            <div id="div-grid" style="position:absolute; display: flex;flex-direction: row;flex-wrap: wrap;bottom: 0;justify-content: space-between;height:100%;width:100%;background-color:white;padding: 0px 0.2%;z-index:0;">
+                                <!-- stage content -->
+                                <div id="desc-hydro" class="desc-form" style="display: block;">
+                                    <div class="info" style="height: 39%;width:28.6%;left:4.4%;">
+                                        <p>
+                                            <b>Durée :</b> 6 mois (en cours) <br>
+                                            <b>Organisme d'accueil :</b> laboratoire LETG et LOBS (IUEM, Plouzané) <br>
+                                            <b>Encadrants :</b> Guillaume Dodet (LOBS) & Serge Suanez (LETG)
+                                        </p>
+                                    </div>
+
+                                    <div class="descri" style="height: 59%;width:41%;right:13.1%;">
+                                        <p>
+                                            Les blocs mais aussi la géomatique...
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="desc-curnic" class="desc-form">
+                                    <div class="info" style="height: 49%;width:28.6%;left:4.4%;">
+                                        <p>
+                                            <b>Durée :</b> 5 mois <br>
+                                            <b>Organisme d'accueil :</b> Mairie de Guissény <br>
+                                            <b>Encadrants :</b> Nicolas Loncle (garde du littoral et chargée de mission
+                                            Natura 2000) et Marie Chevalier (chargée de mission Natura 2000)
+                                        </p>
+                                    </div>
+
+                                    <div class="descri" style="height: 59%;width:41%;right:13.1%;">
+                                        <p>
+                                            Conduction d'une étude globale sur l'étang du Curnic à Guissény. L'objectif
+                                            était de traiter des données physico-chimiques, hydrologiques et
+                                            topo-bathymétriques afin d'accroître les connaissances sur ce système lagunaire
+                                            dans l'objectif de parvenir à une gestion appropriée de son syndrome
+                                            d'eutrophisation.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="desc-l3" class="desc-form">
+                                    <div class="info" style="height: 39%;width:28.6%;left:4.4%;">
+                                        <p>
+                                            <b>Durée :</b> 2,5 mois <br>
+                                            <b>Organisme d'accueil :</b> laboratoire LETG (IUEM, Plouzané) <br>
+                                            <b>Encadrants :</b> Serge Suanez (LETG)
+                                        </p>
+                                    </div>
+
+                                    <div class="descri" style="height: 59%;width:41%;right:13.1%;">
+                                        <p>
+                                            Participation aux missions de terrain portant sur les topomorphologiques de
+                                            plage réalisés dans le cadre de l’observatoire du domaine côtier de l’IUEM
+                                            (ODC-trait de côte), et du service national d’observation SNO-DYNALIT.
+                                            Traitement des données au sein du laboratoire LETG-Brest, et mise en forme et
+                                            saisie des méta-données sous la plateforme d’archivage INDIGEO.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- travail content -->
+                                <div id="desc-rade" class="desc-form">
+                                    <div class="info" style="height: 29%;width:28.6%;left:4.4%;">
+                                        <p>
+                                            <b>Durée :</b> 1 mois <br>
+                                            <b>Organisme :</b> Capitainerie de Sainte-Marine <br>
+                                        </p>
+                                    </div>
+
+                                    <div class="descri" style="height: 39%;width:36.9%;right:17.2%;">
+                                        <p>
+                                            Accueillir et conduire les plaisanciers jusqu'au corps-mort ; les aider à
+                                            s'amarrer. S'ils n'ont pas d'annexe, les conduire jusqu'à la cale et les ramener
+                                            sur leur bateau.
+                                        </p>
+                                    </div>
+                                </div> 
+
+                                <div id="desc-dech" class="desc-form">
+                                    <div class="info" style="height: 29%;width:24.5%;left:4.4%;">
+                                        <p>
+                                            <b>Durée :</b> 1 mois en 2018 et 1 mois en 2019 <br>
+                                            <b>Organisme :</b> Service technique de Pont-L'abbé <br>
+                                        </p>
+                                    </div>
+
+                                    <div class="descri" style="height: 29%;width:32.8%;right:17.2%;">
+                                        <p>
+                                            Procéder à la collecte des déchets en tant que ripper.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+
+            <div id="comp" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comp-container-head">
+                            <h2>Traitement de données</h2>
+                        </div>
+
+                        <div class="comp-container-body">
+                            <div class="list-comp" >
+                                <div>
+                                    <p><a href="#qgis">Qgis</a></p>
+                                </div>
+                                <div>
+                                    <p><a href="#r">R</a></p>
+                                </div>
+                                <div>
+                                    <p><a href="#py">Python</a></p>
+                                </div>
+                                <div>
+                                    <p><a href="#sql">SQL</a></p>
+                                </div>
+                                <div>
+                                    <p><a href="#meta">Metashape</a></p>
+                                </div>
+                                <div>
+                                    <p><a href="#arc">ArcMap</a></p>
+                                </div>
+                                <div>
+                                    <p><a href="#ot">Orfeo Toolbox</a></p>
+                                </div>
+                            </div>
+
+                            <div class="comp-detail">
+                                <div id="qgis" class="comp-detail-item">
+                                    <div class="comp-detail-item-sub">
+                                        <div class="comp-detail-item-sub1">
+                                            <ul>
+                                                <li>Traitements de données vectorielles</li>
+                                                <li>Traitements de données matricielles</li>
+                                                <li>Chaîne de traitements</li>
+                                                <ul>
+                                                    <li>Model Builder</li>
+                                                    <li>Processing</li>
+                                                    <li>Plugin</li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+    
+                                        <div class="comp-detail-item-sub2">
+                                            <p>Très bonne connaissance</p>
+                                        </div>
+                                    </div>
+
+                                    <div style="display: flex;flex-direction:row;padding-top: 6%;">
+                                        <img src="figures/logos/pyqgis.png" alt="pyqgis" style="width:41%;object-fit: contain;margin-right: 12%;">
+                                        <img src="figures/logos/gdal" alt="gdal" style="width: 20%;">
+                                    </div>
+                                </div>
+
+                                <div id="r" class="comp-detail-item">
+                                    <div class="comp-detail-item-sub">
+                                        <div class="comp-detail-item-sub1">
+                                            <ul>
+                                                <li>Préparation de données</li>
+                                                <li>Traitement de données temporelles</li>
+                                                <li>Traitement de données spatiales</li>
+                                                <li>Traitement de données textuelles</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="comp-detail-item-sub2">
+                                            <p>Très bonne connaissance</p>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <img src="figures/scrap_spoti.png" alt="scrap-spoti" style="object-fit: contain; width:100%;"> -->
+
+                                    <div class="comp-detail-img">
+                                        <img src="figures/logos/rstudio.png" alt="rstudio">
+                                        <img src="Figures/logos/dplyr.png" alt="dplyr">
+                                        <img src="Figures/logos/stringr.png" alt="stringr">
+                                        <img src="Figures/logos/tibble.png" alt="tibble">
+                                        <img src="Figures/logos/tsibble.png" alt="tsibble">
+                                        <img src="Figures/logos/forcats.png" alt="forcats">
+                                        <img src="Figures/logos/lubridate.png" alt="lubridate">
+                                        <img src="Figures/logos/sf.gif" alt="sf">
+                                    </div>
+                                </div>
+
+                                <div id="py" class="comp-detail-item">
+                                    <div class="comp-detail-item-sub">
+                                        <div class="comp-detail-item-sub1">
+                                            <ul>
+                                                <li>Préparation de données</li>
+                                                <li>Traitement de données temporelles</li>
+                                                <li>Traitement de données spatiales (pyQGIS)</li>
+                                            </ul>
+                                        </div>
+    
+                                        <div class="comp-detail-item-sub2">
+                                            <p>Bonne connaissance</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="comp-detail-img-py">
+                                        <img src="figures/logos/pycharm.png" alt="pycharm">
+                                        <img src="Figures/logos/vscode.png" alt="vscode">
+                                        <img src="Figures/logos/anaconda.jpg" alt="anaconda">
+                                        <img src="Figures/logos/pandas.png" alt="pandas">
+                                        <img src="Figures/logos/numpy.png" alt="numpy">
+                                        <img src="figures/logos/pyqgis.png" alt="pyqgis">
+                                    </div>
+                                </div>
+
+                                <div id="sql" class="comp-detail-item">
+                                    <div class="comp-detail-item-sub">
+                                        <div class="comp-detail-item-sub1">
+                                            <ul>
+                                                <li>Traitement de données spatiales</li>
+                                            </ul>
+                                        </div>
+    
+                                        <div class="comp-detail-item-sub2">
+                                            <p>
+                                                Très bonne connaissance des requêtes élémentaires. <br>
+                                                <br>
+                                                Connaissance modérée des functions spatiales.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div style="display: flex;flex-direction:row;padding-top: 6%;">
+                                        <img src="figures/logos/postgres.png" alt="postgres" style="width:19%;object-fit: contain;margin-right: 12%;">
+                                        <img src="figures/logos/postgis.png" alt="postgis" style="width: 20%;">
+                                    </div>
+                                </div>
+
+                                <div id="meta" class="comp-detail-item">
+                                    <div class="comp-detail-item-sub">
+                                        <div class="comp-detail-item-sub1">
+                                            <ul>
+                                                <li>Alignement de photos drônes</li>
+                                                <li>Génération de Modèles Numériques de Terrain</li>
+                                                <li>Génération d'orthomosaïques</li>
+                                            </ul>
+    
+                                            <p><a href="https://www.agisoft.com/">Metashape</a> est un logiciel de traitement photogrammétrique</p>
+                                        </div>
+    
+                                        <div class="comp-detail-item-sub2">
+                                            <p>Bonne connaissance</p>
+                                        </div>
+                                    </div>
+
+                                    <img src="figures/logos/metashape.jpg" alt="metashape" style="padding-top: 6%;height:20%; object-fit:contain;position:absolute;left:19%;width:20%;" >
+                                </div>
+
+                                <div id="ot" class="comp-detail-item">
+                                    <div class="comp-detail-item-sub">
+                                        <div class="comp-detail-item-sub1">
+                                            <ul>
+                                                <li>Classification non-supervisée</li>
+                                                <li>Classification supervisée</li>
+                                                <ul>
+                                                    <li>Orientée pixel</li>
+                                                    <li>Orientée objet</li>
+                                                </ul>
+                                            </ul>
+        
+                                        </div>
+                                        
+                                        <div class="comp-detail-item-sub2">
+                                            <p>Connaissance modérée</p>
+                                        </div>
+                                    </div>
+
+                                    <img src="figures/logos/ot.png" alt="otb" style="padding-top: 6%;height:20%; object-fit:contain;position:absolute;left:19%;width:20%;" >
+                                </div>
+
+                                <div id="arc" class="comp-detail-item">
+                                    <div class="comp-detail-item-sub">
+                                        <div class="comp-detail-item-sub1">
+                                            <ul>
+                                                <li>Traitement de données spatiales</li>
+                                            </ul>
+                                        </div>
+    
+                                        <div class="comp-detail-item-sub2">
+                                            <p>Connaissance modérée</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <img src="figures/logos/arcmap.png" alt="arcmap" style="padding-top: 6%;height:20%; object-fit:contain;position:absolute;left:22%;width:20%;" >
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div style="width:100%;height:85%">
+                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                            <iframe src="figures/diag.html" style="width: 100%;height: 100%" frameborder="0"></iframe>
+                        </div> -->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content-left">
+                            <h2>Analyse de données</h2>
+
+                            <div style="display: flex; justify-content:space-between;flex-direction:column;">   
+                                <div>
+                                    <h3>Analyse spatiale</h3>
+                                    <ul>
+                                        <li>Analyse de la vulnérabilité des routes départemental du finistère aux risques côtiers</li>
+                                    </ul>
+
+                                    <h3>Analyse temporelle</h3>
+                                    <ul>
+                                        <li>Analyse des variations de niveaux d'eau, de température et de conductivité à l'exutoire de l'étang du Curnic</li>
+                                    </ul>
+
+                                    <h3>Analyse spatio-temporelle</h3>
+                                    <ul>
+                                        <li>Cinématique du trait de côte à Guissény depuis 1950</li>
+                                        <li>Analyse des flux en nutriments dans le marais et l'étang du Curnic</li>
+                                        <li>Évolution des états de mer de la façade occidentale de l'Islande</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="statistiques" class="content-right" style="padding: 30px 3%; color:white;">
+                            <h3 style="padding-bottom: 0;">Statistiques</h3>
+
+                            <h4>Analyse univariée</h4>
+                            <p>
+                                Identification des valeurs centrales, de la variabilité et de la dispersion des variables quantatives. Tris à plat des variables qualitatives.
+                            </p>
+
+                            <h4>Analyse bivariée</h4>
+                            <p>
+                                Tests paramétriques et non paramétriques sur varaibles quantitives et qualitatives
+                            </p>
+
+                            <h4>Analyse multivariée</h4>
+                            <p>
+                                Analyses factorielles (ACP, AFM et ACM). Classification (CAH). Table des corrélations. 
+                            </p>
+
+                            <h4>Modélisation</h4>
+                            <p>
+                                Regression linéaire, Modèle Linéaire Généralisé, Régression Logistique.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div id="viz" class="content-top">
+                            <h2>Visualisation de données</h2>
+
+                            <h3>Cartographie</h3>
+                            <ul>
+                                <li>Qgis</li>
+                                <li>Adobe Illustrator et Adobe Photoshop</li>
+                                <li>WepMapping : leaflet (bibliothèque javascript, package R)</li>
+                            </ul>
+
+                            <h3>Graphique et diagramme</h3>
+                            <ul>
+                                <li>R : GGplot2 et ses extensions</li>
+                                <li>Python : seaborn, matplotlib</li>
+                                <li>Interactif : plotly.js (R et python) et chart.js</li>
+                            </ul>
+                        </div>
+
+                        <div style="width:100%; position:absolute; bottom:0;height:35%;display:flex; flex-direction:column;">
+                            <div class="bar-anime" id="bar-1"></div>
+                            <div class="bar-anime" id="bar-2"></div>
+                            <div class="bar-anime" id="bar-3"></div>
+                            <div class="bar-anime" id="bar-4"></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div id="viz" class="content-top">
+                            <h2>Autres</h2>
+
+                            <div style="width: 100%; height:100%;">
+                                <div style="display: flex; width:100%; padding-bottom:3%;">
+                                    <div class="comp-other">
+                                        <h3>Édition de texte (et de code)</h3>
+                                        <ul>
+                                            <li>Adobe Indesign</li>
+                                            <li>LaTex</li>
+                                            <li>Rmarkdown (bookdown)</li>
+                                            <li>Jupyter Notebook</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="comp-other">
+                                        <h3>OS</h3>
+                                        <ul>
+                                            <li>Windows</li>
+                                            <li>Linux</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; width:100%;">
+                                    <div class="comp-other">
+                                        <h3>Développement Web</h3>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Javascript (JQuery, Anime.js)</li>
+                                            <li>php</li>
+                                            <li>WampServer</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comp-other">
+                                        <h3>Version control</h3>
+                                        <ul>
+                                            <li>Github</li>
+                                            <li>Gitlab</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="ailleurs" class="content">
+
+                <p>
+                    Lire abondamment toute sorte de <span id="id-litt">littérature</span><br>
+                    Un <a id="id-twi" href="https://twitter.com/AntoineDoeuff">penchant</a> pour l'art pictural et le
+                    design graphique <br>
+                    Jouer et écrire de la musique — en <a id="id-spoti"
+                        href="https://open.spotify.com/user/21dqiejllioictwt3efofjr6q?si=db8a0c30e13849a6">écouter</a>,
+                    beaucoup <br>
+                    Des projets étranges avec des amis étranges : se former par l'absurde <br>
+                    <span id="id-cet">Théâtre</span><br>
+                    Randonner, se promener
+                </p>
+
+                <div id="cet" class="display">
+                    Certificat d'Étude Théâtrale. Conservatoire de Musique et d'Art Dramatique de Quimper. 2015 — 2018
+                </div>
+
+                <div id="litt" class="display">
+                    Émile Cioran — Fiodor Dostoïevsky — Samuel Beckett — Karl Renz — Franz Kafka — Nisardagatta
+                    Maharaj...
+                </div>
+
+                <div id="spoti" class="display">
+                    <img src="figures/Spotify_logo_without_text.jpg" alt="spotify logo" style="height: 50px;"> <br>
+                    J.S. Bach — The Third Eye Foundation — Stang Getz — Murcof — Steve Reich — Dmitri Shostakovitch...
+                </div>
+
+                <div id="twi" class="display">
+                    <img src="figures/Twitter-logo.jpg" alt="twitter logo" style="height: 50px;"> <br>
+                    Jérôme Bosch — Félix Valloton — Robert Massin — Gustave Moreau — Edvard Munch...
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p><b>Contact •</b> antoineledoeuff@yahoo.fr</p>
+    </footer>
+
+</body>
+
+</html>
