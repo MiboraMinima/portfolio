@@ -1,35 +1,8 @@
 **! Revoir L'ensemble des proj pour uniformisation des exemples !**
 
-!Dans cv connaissances pluridisciplinaire à virer (ça reste de la géo)!
-
 # Nav
 
 # Projets
-
-Exemple = 1 slide (faire des liens s'il faut)
-
-## Vulnérabilité routes
-
-- **Slide1**: Titre
-- **slide2**: Méthodo (indicatuer)
-- **slide2**: Exemple : hauteur d'eau
-  - Traitement :
-    - 
-- **slide4**: Exemple : déviation
-- **slide5**: Compétences techniques
-
-## Daoulas
-
-Done -> c très moche
-
-## L3
-
-- **slide2**: *Exemple cinématique du TDC (si le temps)*
-
-## Curnic
-
-Done
-
 ## Gallerie
 
 - **Slide1**: Titre
@@ -53,49 +26,8 @@ La légende -> juste moi
 Revoir l'orthographe
 
 # Information
-## Curicullum
-centrer la ligne de formation
--> nouvelle diapo avec Stages et job d'été
-
-Dans les Bandes vides -> jeu Typo FORMATION / STAGE
 
 # Compétence techniques
-<!--
-1. Acquisition de données
-   1. Terrain
-   2. Web scrapping
-  
-2. Gestion de données 
--->
-
-1. Manipulation et traitement de données
-   1. QGIS
-      1. PyQGIS
-      2. Modelere
-   2. R
-   3. Python
-   4. SQL
-   5. Metashape
-   6. ARCGIS
-   7. SURFER
-   8. Orfeo Toolbox
-   
-2. Analyse de données
-   1. Statistiques descriptives
-      1. Univariée
-      2. Bivarée
-      3. Multivariée
-   2. Analyse spatiale
-      1. Géomorpho
-   3. Analyse de séries temporelles
-      1. Modélisation
-      2. EVA
-   
-3. Visualisation de données
-4. GGagly
-4. Autres
-
-
 # Slider
 
 ## Cartographie
@@ -113,3 +45,13 @@ Dans les Bandes vides -> jeu Typo FORMATION / STAGE
 - GIS Art
   - EDMONET
   - ...
+
+# Revoir
+Bordel de taille d'écran...
+Flèche sub pas visible au premier abords
+vide compétences...
+lie vers une autre fenêtre
+
+>>>>>>google eath carte
+
+Mettre du delay et autoplay animation exp. pro

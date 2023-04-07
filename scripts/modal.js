@@ -486,27 +486,27 @@ $(document).ready(function () {
         wrapper.scrollTop = scrollY;
         wrapper.scrollLeft = scrollX;
     });
-});
 
-/////////////////////////////////////////////////////////////////////////////////////
-// DoD
-$(document).ready(function () {
-    var modal = document.getElementById("dodModal");
+    var modal = document.getElementById("contratModal");
 
-    var img = document.getElementById("dodImg");
-    var modalImg = document.getElementById("dodImgModal");
+    var img = document.getElementById("contratImg");
+    var modalImg = document.getElementById("contratImgModal");
     img.onclick = function () {
         modal.style.display = "flex";
         modalImg.src = this.src;
     }
 
-    var span = document.getElementById("dodClose");
+    var span = document.getElementById("contratClose");
 
     span.onclick = function () {
         modal.style.display = "none";
     };
+
 });
 
+
+/////////////////////////////////////////////////////////////////////////////////////
+// DoD
 $(document).ready(function () {
     var wrapper = document.getElementById("dodWrapper");
     var image = document.getElementById("dodImgModal");

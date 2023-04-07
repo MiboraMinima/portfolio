@@ -1,20 +1,16 @@
 /* INFORMATIONS */
-.content-base {
+/* .content-base {
     position: absolute;
     height: 95vh;
     width: -moz-available;
-    /*shlag shit*/
     width: -webkit-fill-available;
     display: none;
-}
+} */
 
 .content-cv {
     float: left;
     padding: 30px 40px;
     width: 60%;
-    /*shlag shit*/
-    width: -webkit-fill-available;
-    /*shlag shit*/
     height: 95vh;
 }
 
@@ -30,7 +26,7 @@
 }
 
 .grid-item h3, .texte-child-hor h3 {
-    font-size: 120%;
+    font-size: 1vw;
     font-weight: 500;
     font-style: italic;
     padding-top: 0px;

@@ -21,9 +21,6 @@ h4 {
     float: left;
     padding: 30px 40px;
     width: 60%;
-    /*shlag shit*/
-    width: -webkit-fill-available;
-    /*shlag shit*/
     height: 95vh;
 }
 
@@ -64,7 +61,7 @@ h4 {
 }
 
 .swiper-slide p {
-    font-size: 90%;
+    font-size: 0.95vw;
     font-weight: 300;
 }
 
@@ -74,7 +71,7 @@ h4 {
 }
 
 .content-left li {
-    font-size: 90%;
+    font-size: 0.95vw;
     font-weight: 300;
     padding-top: 7px;
 }
@@ -98,7 +95,7 @@ h4 {
 }
 
 p.proj-desc {
-    font-size: 100%;
+    font-size: 1.05vw;
     font-weight: 300;
     line-height: 1.5em;
 }
@@ -170,7 +167,7 @@ p.proj-desc {
 
 .legend p {
     color: #007478;
-    font-size: 90%;
+    font-size: 0.9vw;
     font-weight: 300;
     font-style: italic;
     text-align: right;
@@ -224,7 +221,7 @@ p.proj-desc {
     width: 70%;
 }
 .data-circle-container p {
-    font-size: 90%;
+    font-size: 0.95vw;
     font-weight: 300;
     line-height: 1.5em;
 }
@@ -330,11 +327,11 @@ thead tr th {
     padding-bottom: 1%;
 }
 th {
-    font-size: 90%;
+    font-size: 0.95vw;
     font-weight: 400;
 }
 td {
-    font-size: 90%;
+    font-size: 0.95vw;
     font-weight: 300;
     padding: 0.6%;
 }
@@ -350,7 +347,7 @@ td {
 }
 
 .float-div-mnt ul {
-    font-size: 90%;
+    font-size: 0.95vw;
     font-weight: 300;
     list-style: none;
 }

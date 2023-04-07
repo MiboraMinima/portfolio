@@ -7,19 +7,16 @@ $(document).ready(
       // Hide the to-show element when the hoverable element is no longer being hovered over
       $('#legend-nitrate').hide();
     });
-
     $("#phare-aix").hover(function () {
       $('#legend-phare').show();
     }, function () {
       $('#legend-phare').hide();
     });
-
     $("#mnt-daoulas").hover(function () {
       $('#legend-mnt-daoulas').show();
     }, function () {
       $('#legend-mnt-daoulas').hide();
     });
-
     $("#crozon-route").hover(function () {
       $('#legend-crozon').show();
     }, function () {
@@ -29,6 +26,11 @@ $(document).ready(
       $('#legend-code').show();
     }, function () {
       $('#legend-code').hide();
+    });
+    $("#etang_photo").hover(function () {
+      $('#legend-etang').show();
+    }, function () {
+      $('#legend-etang').hide();
     });
 
 

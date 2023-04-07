@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+b {
+    font-weight: 400;
+}
+
 main {
     display: flex;
     height: 95vh;
@@ -83,6 +87,7 @@ h3 {
 
 p {
     text-indent: 0px;
+    font-size: 1vw;
 }
 
 footer p {
@@ -99,6 +104,9 @@ a {
     margin-right: 10%;
     line-height: 2.75ex;
     font-weight: 300;
+}
+.desc p {
+    font-size: 1.1vw;
 }
 
 .titre {
