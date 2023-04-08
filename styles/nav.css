@@ -15,9 +15,9 @@ nav li {
 ul.dropdown-content li {
     border: none;
     font-family: 'Fira sans';
-    font-size: 120%;
+    font-size: 1.2vw;
     font-weight: 300;
-    padding: 10px 0;
+    padding: 1vh 0;
 }
 
 .dropdown {
@@ -54,7 +54,7 @@ ul.dropdown-content li {
     box-shadow: none;
     border: white;
     padding: 15px 0 15px 8%;
-    font-size: 180%;
+    font-size: 2vw;
 }
 
 .ul-proj {
@@ -74,10 +74,15 @@ ul.ul-proj li {
 
 
 /*  FLECHES */
+.arrow {
+    font-family: 'Fira Code';
+}
+
 .arrow-nav {
-    font-family: 'Fira sans';
+    font-family: 'Fira Code';
     display: inline-block;
     transition: transform 0.2s;
+    font-weight: 300;
 }
 .arrow-nav.down {
     transform: translateY(-10px) rotate(90deg);
@@ -90,7 +95,7 @@ ul.ul-proj li {
 
 .arrow-sub-nav {
     display: none;
-    font-family: 'Fira sans';
+    font-family: 'Fira Code';
     display: inline-block;
     transition: transform 0.2s;
 }
@@ -104,6 +109,7 @@ ul.ul-proj li {
 
 .arrow-item-sub {
     color: white;
+    font-family: 'Fira Code';
 }
 .arrow-item-sub.black {
     color: black;
@@ -111,7 +117,7 @@ ul.ul-proj li {
 
 .arrow-item {
     display: none;
-    font-family: 'Fira sans';
+    font-family: 'Fira code';
 }
 .arrow-item.clicked {
     display: inline-block;

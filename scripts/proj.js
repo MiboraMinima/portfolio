@@ -1,5 +1,6 @@
 $(document).ready(
   function () {
+    // Legend
     $("#plot-nitrate").hover(function () {
       // Display the to-show element when the hoverable element is hovered over
       $('#legend-nitrate').show();
@@ -31,6 +32,11 @@ $(document).ready(
       $('#legend-etang').show();
     }, function () {
       $('#legend-etang').hide();
+    });
+    $("#garde_mono").hover(function () {
+      $('#legend-mono').show();
+    }, function () {
+      $('#legend-mono').hide();
     });
 
 

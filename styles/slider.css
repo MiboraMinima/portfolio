@@ -43,6 +43,9 @@
     background-color: white;
     width: 90%;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .desc-slider p {
@@ -50,6 +53,7 @@
     text-align: center;
     padding-top: 10px;
     line-height: 1.5em;
+    width: 85%;
 }
 
 .prev {

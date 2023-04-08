@@ -63,7 +63,7 @@ footer {
 h1 {
     font-family: 'Fira sans';
     font-weight: 400;
-    font-size: 180%;
+    font-size: 2vw;
     margin-bottom: 50px;
     margin-left: 8%;
     padding-top: 3%;
@@ -73,17 +73,29 @@ h2 {
     font-family: 'Fira sans';
     font-weight: 400;
     font-style: italic;
-    font-size: 180%;
+    font-size: 2vw;
     padding-bottom: 30px;
 }
 
 h3 {
-    font-size: 120%;
+    font-size: 1.4vw;
     font-weight: 500;
     padding-top: 0;
     padding-bottom: 20px;
     line-height: 1.5em;
 }
+h3.green {
+    font-weight: 500;
+}
+
+h4 {
+    font-family: "Fira Sans";
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
 
 p {
     text-indent: 0px;

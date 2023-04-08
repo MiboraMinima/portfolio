@@ -47,11 +47,10 @@ Revoir l'orthographe
   - ...
 
 # Revoir
-Bordel de taille d'écran...
 Flèche sub pas visible au premier abords
-vide compétences...
-lie vers une autre fenêtre
+lien vers une autre fenêtre (pas bon partout)
 
 >>>>>>google eath carte
 
 Mettre du delay et autoplay animation exp. pro
+

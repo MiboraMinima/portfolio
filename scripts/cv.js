@@ -75,7 +75,7 @@ $(document).ready(function () {
     $('.animate-container').show();
   });
 
-  // STAGE
+  //STAGE
   $('#grid-hydro').hover(function() {
     $('#desc-hydro').show();
     $(this).css('color', '#007478');

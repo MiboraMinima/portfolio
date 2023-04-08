@@ -33,48 +33,59 @@ $(document).ready(
             $(this).find("span.arrow-sub-nav").show();
             $(this).find("span.arrow-sub-nav").addClass("clicked");
         });
-});
 
-// arrow-item
-$(document).ready(function () {
-    $('.dropdown-content ul.ul-proj li').hover(function () {
-        $('.dropdown-content ul.ul-proj li .arrow-item-sub').not($(this)).removeClass("black");
-        $(this).find('.arrow-item-sub').addClass("black");
-    }, function() {
-        $(this).find('.arrow-item-sub').removeClass("black");
-    });
+        ///////////////////////////////////////////////////////////////////////////////
+        // Arrow-Item
+        $('.dropdown-content ul.ul-proj li').hover(function () {
+            $('.dropdown-content ul.ul-proj li .arrow-item-sub').not($(this)).removeClass("black");
+            $(this).find('.arrow-item-sub').addClass("black");
+        }, function() {
+            $(this).find('.arrow-item-sub').removeClass("black");
+        });
+        
+        $('#nav-2 ul.dropdown-content li').hover(function (e) {
+            e.stopPropagation();
+            // $('.dropdown-content li .arrow-item').not($(this)).hide();
+            $(this).find('span.arrow-item').show();
+        }, function() {
+            $(this).find('span.arrow-item:not(span.arrow-item.clicked)').hide();
+        });
     
-    $('#nav-2 ul.dropdown-content li').hover(function (e) {
-        e.stopPropagation();
-        // $('.dropdown-content li .arrow-item').not($(this)).hide();
-        $(this).find('span.arrow-item').show();
-    }, function() {
-        $(this).find('span.arrow-item:not(span.arrow-item.clicked)').hide();
-    });
-
-    $('#info ul.dropdown-content li').hover(function (e) {
-        e.stopPropagation();
-        // $('.dropdown-content li .arrow-item').not($(this)).hide();
-        $(this).find('span.arrow-item').show();
-    }, function() {
-        $(this).find('span.arrow-item:not(span.arrow-item.clicked)').hide();
-    });
+        $('#info ul.dropdown-content li').hover(function (e) {
+            e.stopPropagation();
+            // $('.dropdown-content li .arrow-item').not($(this)).hide();
+            $(this).find('span.arrow-item').show();
+        }, function() {
+            $(this).find('span.arrow-item:not(span.arrow-item.clicked)').hide();
+        });
+        
+        $('#nav-2 ul.dropdown-content li').click(function (e) {
+            e.stopPropagation();
     
-    $('#nav-2 ul.dropdown-content li').click(function (e) {
-        e.stopPropagation();
+            // $(this).find('span.arrow-item').not($(this)).hide();
+            $(this).find('span.arrow-item').not($(this)).removeClass('clicked');
+            // $(this).find('span.arrow-item').show();
+            $(this).find('span.arrow-item').addClass("clicked");
+        });
+    
+        $('#info ul.dropdown-content li').click(function (e) {
+            e.stopPropagation();
+    
+            $('#info ul.dropdown-content li span.arrow-item').not($(this)).hide();
+            $('#info ul.dropdown-content li span.arrow-item').not($(this)).removeClass('clicked');
+            $(this).find('span.arrow-item').show();
+            $(this).find('span.arrow-item').addClass("clicked");
+        });
 
-        // $(this).find('span.arrow-item').not($(this)).hide();
-        $(this).find('span.arrow-item').not($(this)).removeClass('clicked');
-        // $(this).find('span.arrow-item').show();
-        $(this).find('span.arrow-item').addClass("clicked");
-    });
 
-    $('#info ul.dropdown-content li').click(function (e) {
-        e.stopPropagation();
-
-        $('#info ul.dropdown-content li span.arrow-item').not($(this)).hide();
-        $('#info ul.dropdown-content li span.arrow-item').not($(this)).removeClass('clicked');
-        $(this).find('span.arrow-item').show();
-        $(this).find('span.arrow-item').addClass("clicked");
-    });
+        ///////////////////////////////////////////////////////////////////////////////
+        // Move arrow to spot them
+        anime({
+            targets:"#arrow-move",
+            translateY:10,
+            rotate: 90,
+            duration:1000,
+            direction:"alternate",
+            autoplay:true
+        });
 });

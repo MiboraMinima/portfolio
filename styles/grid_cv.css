@@ -1,12 +1,4 @@
 /* INFORMATIONS */
-/* .content-base {
-    position: absolute;
-    height: 95vh;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    display: none;
-} */
-
 .content-cv {
     float: left;
     padding: 30px 40px;
@@ -75,7 +67,7 @@
 .grid-item {
     /* background-color: lightblue; */
     padding: 20px 20px;
-    font-size: 80%;
+    font-size: 0.85vw;
 }
 
 /* Description in bande */
@@ -123,7 +115,8 @@
 .texte-child-hor {
     float: left;
     width: 100%;
-    padding: 10px;
+    padding-right: 1.7vw;
+    padding-top: 1vw;
 }
 
 .desc-form-2 p {
@@ -139,7 +132,13 @@
     background-color: #007478;
     left:4.4%;
     margin-top: 0.2%;
+    padding-top: 1%;
 }
+.info p {
+    padding-top: 0;
+    padding-bottom: 3%;
+}
+
 .descri {
     width: 231px;
     height: 165px;
@@ -148,8 +147,12 @@
     right: 165px;
     background-color: #007478;
     margin-top: 0.2%;
+    padding-top: 1%;
 }
-
+.descri p {
+    padding-top: 0;
+    padding-bottom: 3%;
+}
 
 
 /* SWIPER */
@@ -186,25 +189,19 @@
 .content-stage {
     padding: 30px 40px;
     width: 100%;
-    /*shlag shit*/
     width: -webkit-fill-available;
-    /*shlag shit*/
     height: 60vh;
 }
 
 .grid-container-2 {
     position: absolute;
     display: grid;
-    width:100%;
-    /* grid-template-columns: 100%;
-    grid-template-rows: auto; */
+    width:95%;
     grid-auto-flow: column;
 }
 
 .grid-item-hor {
-    /* background-color: lightblue; */
-    padding: 10px 10px;
-    font-size: 80%;
+    font-size: 0.85vw;
 }
 
 /* Underline */
@@ -220,12 +217,12 @@
     bottom: 0;
     margin-bottom: 5%;
     color: #007478;
-    font-size: 300%;
+    font-size: 3.2vw;
     padding-right: 2%;
 }
 
 #ailleurs p {
-    font-size: 130%;
+    font-size: 1.5vw;
     line-height: 1.75em;
 }
 
@@ -276,7 +273,7 @@
 .box {
     position: relative;
     width: 3.7%;
-    height: 9%;
+    height: 10%;
     background-color:#007478;
     margin: 0.2%;
 }
