@@ -206,8 +206,8 @@
 
 /* Underline */
 .underline {
-    padding-bottom: 5px;
-    border-bottom: 5px solid #007478;
+    padding-bottom: 0.35vw;
+    border-bottom: 0.35vw solid #007478;
 }
 
 /* Par ailleurs*/
