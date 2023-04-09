@@ -7,6 +7,9 @@
     <title> aledoeuff</title>
 
     <!-- Link -->
+    <!-- Icon -->
+    <link rel="icon" href="figures/logos/icon_site.png">
+    <!-- Style -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/grid_cv.css">
@@ -141,10 +144,10 @@
                                 class="arrow-nav" style="padding-left: 20px;">-></span></button>
 
                             <ul class="dropdown-content">
-                                <li><a  id="id-slider-div-carto" href="#slider-div-carto">Cartographie</a><span class="arrow-item"
-                                    style="padding-left: 20px;">-></span></li>
-                                <li><a id="id-slider-div-autre" href="#slider-div-autre">Autres</a><span class="arrow-item"
-                                    style="padding-left: 20px;">-></span></li>
+                                <li><a id="id-slider-div-carto" href="#slider-div-carto">Cartographie</a>
+                                    <span class="arrow-item" style="padding-left: 20px;">-></span></li>
+                                <li><a id="id-slider-div-autre" href="#slider-div-autre">Autres</a>
+                                    <span class="arrow-item" style="padding-left: 20px;">-></span></li>
                             </ul>
                         </li>
 
@@ -153,12 +156,12 @@
                                     class="arrow-nav" style="padding-left: 20px;">-></span></button>
 
                             <ul class="dropdown-content">
-                                <li><a id="id-cv" href="#cv">Curriculum</a><span class="arrow-item"
-                                        style="padding-left: 20px;">-></span></li>
-                                <li><a id="id-comp" href="#comp">Compétences techniques</a><span class="arrow-item"
-                                        style="padding-left: 20px;">-></span></li>
-                                <li><a id="id-ailleurs" href="#ailleurs">Par ailleurs...</a><span class="arrow-item"
-                                        style="padding-left: 20px;">-></span></li>
+                                <li><a id="id-cv" href="#cv">Curriculum</a>
+                                    <span class="arrow-item" style="padding-left: 20px;">-></span></li>
+                                <li><a id="id-comp" href="#comp">Compétences techniques</a>
+                                    <span class="arrow-item" style="padding-left: 20px;">-></span></li>
+                                <li><a id="id-ailleurs" href="#ailleurs">Par ailleurs...</a>
+                                    <span class="arrow-item" style="padding-left: 20px;">-></span></li>
                             </ul>
                         </li>
                     </ul>
@@ -253,8 +256,8 @@
                             </p>
                         </div>
 
-                        <div id="phare-aix" class="content-right" style="background-color:white;">
-                            <img src="figures/aix_photo.JPG" alt="photo phare" style="height:100%">
+                        <div id="phare-aix" class="content-right" style="background-color:white;overflow:hidden;position:absolute;overflow:hidden;right:-3%;">
+                            <img src="figures/aix_photo.JPG" alt="photo phare" style="height:81%;transition: rotate();transform: rotate(270deg);position: absolute;right: -74%;">
                         </div>
                     </div>
 
@@ -1532,7 +1535,7 @@
             <div id="slider-div-carto" class="content">
                 <div id="slider-carto">
                     <ul>
-                        <li id="tasmanSlide" class="tasman-slide">
+                        <li id="tasmanSlide" class="tasman-slide" style="z-index: 4;">
                             <img src="figures/CartoGeomorpho_Tasman_Glacier.png" id="tasmanImg" alt="tasman-Glacier"
                                 class="slide-img">
 
@@ -1559,7 +1562,7 @@
                             </div>
                         </li>
 
-                        <li id="damntSlide" class="damnt-slide">
+                        <li id="damntSlide" class="damnt-slide" style="z-index: 3;">
                             <img src="figures/mnt_daoulas.png" id="damntImg" alt="daoulas mnt"
                                 class="slide-img">
 
@@ -1584,7 +1587,7 @@
                             </div>
                         </li>
 
-                        <li id="radeSlide" class="rade-slide">
+                        <li id="radeSlide" class="rade-slide" style="z-index: 2;">
                             <img src="figures/mnt_carto_v2-01.png" id="radeImg" alt="rade-Glacier" class="slide-img">
 
                             <a href="#rade-nav"></a>
@@ -1610,7 +1613,7 @@
                             </div>
                         </li>
 
-                        <li id="platierSlide" class="platier-slide">
+                        <li id="platierSlide" class="platier-slide" style="z-index: 1;">
                             <img src="figures/CartoGeomorpho_Platier.png" id="platierImg" alt="platier-Glacier"
                                 class="slide-img">
 
@@ -1692,7 +1695,7 @@
             <div id="slider-div-autre" class="content">
                 <div id="slider-carto">
                     <ul>
-                        <li id="daoulasSlide" class="daoulas-slide">
+                        <li id="daoulasSlide" class="daoulas-slide" style="z-index: 5;">
                             <img src="figures/daoulas_garde_rogn.png" id="daoulasImg" alt="daoulas-Glacier"
                                 class="slide-img">
 
@@ -1707,11 +1710,14 @@
                                     </div>
 
                                     <p style="font-weight: 300;">
+                                        Page de garde du rapport de la monographie communale de Daoulas réalisée en Master 1
+                                        EGEL. <br>
+                                        <br>
                                         L’illustration s'appuie sur la chorématique. La structure de la commune est
                                         caractérisée par ses flux tant physiques (rivière et marée) qu'anthropiques
                                         (route nationale à l'Est orientée N-S et route départementale sur un axe
                                         NNW-SSE). Située au Nord du centre-ville, l'abbaye de Daoulas est le seul pôle
-                                        de la ville, son rayonnement est départementale. La partie Sud-Ouest de la
+                                        de la ville, son rayonnement est départemental. La partie Sud-Ouest de la
                                         commune est distinguée par son activité agricole.
                                     </p>
                                 </div>
@@ -1724,7 +1730,7 @@
                             </div>
                         </li>
 
-                        <li id="posterSlide" class="bathy-slide">
+                        <li id="posterSlide" class="bathy-slide" style="z-index: 4;">
                             <img src="figures/gnsy_poster_stage_V3.png" id="posterImg" alt="poster gsny"
                                 class="slide-img">
 
@@ -1737,7 +1743,7 @@
                                     </div>
 
                                     <p style="font-weight: 300;">
-                                        La couche utilisée est celle d'EDMONET.
+                                        
                                     </p>
                                 </div>
 
@@ -1749,7 +1755,7 @@
                             </div>
                         </li>
 
-                        <li id="contratSlide" class="bathy-slide">
+                        <li id="contratSlide" class="bathy-slide" style="z-index: 3;">
                             <img src="figures/contrat_rade_diapo.png" id="contratImg" alt="contrat diapo"
                                 class="slide-img">
 
@@ -1762,7 +1768,7 @@
                                     </div>
 
                                     <p style="font-weight: 300;">
-                                        La couche utilisée est celle d'EDMONET.
+                                         
                                     </p>
                                 </div>
 
@@ -1774,7 +1780,7 @@
                             </div>
                         </li>
 
-                        <li id="bathySlide" class="bathy-slide">
+                        <li id="bathySlide" class="bathy-slide" style="z-index: 2;">
                             <img src="figures/Bathy_DEM_RGBtiff_OneBandTiff.png" id="bathyImg" alt="bathy-Glacier"
                                 class="slide-img">
 
@@ -1789,7 +1795,7 @@
                                     </div>
 
                                     <p style="font-weight: 300;">
-                                        La couche utilisée est celle d'EDMONET.
+                                        
                                     </p>
                                 </div>
 
@@ -1801,7 +1807,7 @@
                             </div>
                         </li>
 
-                        <li id="dodSlide" class="bathy-slide">
+                        <li id="dodSlide" class="bathy-slide" style="z-index: 1;">
                             <img src="figures/dod_diff.png" id="dodImg" alt="dod diff"
                                 class="slide-img">
 
@@ -1814,8 +1820,7 @@
                                     </div>
 
                                     <p style="font-weight: 300;">
-                                        Extrait d'un fichier .tif généré à la suite d'une différence entre deux MNT (DOD)
-                                        sur le site à blocs cyclopéens de Katlarauhn en Islande.
+                                        
                                     </p>
                                 </div>
 
@@ -1868,8 +1873,8 @@
 
                         <div id="bathyDesc" class="desc-slider">
                             <p>
-                                Bathymétrie de la Manche, du Golfe de Gascogne et d'une partie de la mer Celtique issue
-                                d'un <br> calcul raster • Le résultat a été conservé pour son esthétique
+                                Cartographie "brute" de la bathymétrie de la Manche, du Golfe de Gascogne et d'une partie de la mer Celtique issue
+                                d'un calcul raster manqué
                             </p>
 
                             <p style="font-weight: 300;">
@@ -1879,7 +1884,7 @@
 
                         <div id="dodDesc" class="desc-slider">
                             <p>
-                                Différence de MNT (détail), Katlarauhn — Islande. Par ce que
+                                Extrait d'un fichier raster de différence entre MNT (DOD), Katlarauhn — Islande
                             </p>
 
                             <p style="font-weight: 300;">
@@ -2135,7 +2140,7 @@
                                         <p>
                                             L'objectif de ce stage est de caractériser les états de mer extrêmes au large de la façade occidentale
                                             de l'Islande et d'en estimer les évolutions depuis la seconde moitié du 20e siècle. Des données
-                                            de bouées, de modèle (ERA5) et de
+                                            de bouée, de modèle (ERA5) et de
                                             sattelite (radar) sont utilisées. Les résultats obtenus seront mis en relation avec la
                                             dynamique des cordons de blocs cyclopéens en presqu'île de Reykjanes.
                                         </p>

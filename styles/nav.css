@@ -24,13 +24,11 @@ ul.dropdown-content li {
     border-top: 2px solid black;
     box-sizing: border-box;
 }
-/* .dropdown:hover {
-    cursor: pointer;
-} */
 
 .dropdown-content {
     display: none;
     padding: 2% 8%;
+    padding-right: 2%;
     border-top: 2px solid black;
 }
 
@@ -120,7 +118,6 @@ ul.ul-proj li {
     font-family: 'Fira code';
 }
 .arrow-item.clicked {
-    display: inline-block;
-    color: black;
-    pointer-events: none;
+    display: inline-block !important;
+    pointer-events: none !important;
 }

@@ -1,17 +1,17 @@
 $(document).ready(
     function () {
         // arrow-nav
-        $('nav ul li').hover(function(e) {
+        $('nav ul li.dropdown').hover(function(e) {
             e.stopPropagation(); // empêche la propagation de l'événement
             $(this).find("span.arrow-nav").addClass("down");
         }, function(){
             $(this).find("span.arrow-nav").removeClass("down");
         });
 
-        $('nav ul li').click(function (e) {
+        $('nav ul li.dropdown').click(function (e) {
             e.stopPropagation(); // empêche la propagation de l'événement
             
-            $("nav ul li span.arrow-nav").not($(this)).removeClass("clicked");
+            $("nav ul li.dropdown span.arrow-nav").not($(this)).removeClass("clicked");
             $(this).find("span.arrow-nav").addClass("clicked");
 
             $(".arrow-sub-nav").removeClass("clicked");
@@ -35,49 +35,34 @@ $(document).ready(
         });
 
         ///////////////////////////////////////////////////////////////////////////////
-        // Arrow-Item
+        // Arrow-Item Sub
         $('.dropdown-content ul.ul-proj li').hover(function () {
             $('.dropdown-content ul.ul-proj li .arrow-item-sub').not($(this)).removeClass("black");
             $(this).find('.arrow-item-sub').addClass("black");
         }, function() {
             $(this).find('.arrow-item-sub').removeClass("black");
         });
-        
-        $('#nav-2 ul.dropdown-content li').hover(function (e) {
+
+
+        ///////////////////////////////////////////////////////////////////////////////
+        // Arrow-Item
+        $('li#nav-2 ul.dropdown-content li').hover(function (e) {
             e.stopPropagation();
             // $('.dropdown-content li .arrow-item').not($(this)).hide();
             $(this).find('span.arrow-item').show();
         }, function() {
-            $(this).find('span.arrow-item:not(span.arrow-item.clicked)').hide();
+            $(this).find('span.arrow-item').hide();
         });
-    
-        $('#info ul.dropdown-content li').hover(function (e) {
+        
+        $('li#info ul.dropdown-content li').hover(function (e) {
             e.stopPropagation();
+
             // $('.dropdown-content li .arrow-item').not($(this)).hide();
             $(this).find('span.arrow-item').show();
         }, function() {
-            $(this).find('span.arrow-item:not(span.arrow-item.clicked)').hide();
-        });
-        
-        $('#nav-2 ul.dropdown-content li').click(function (e) {
-            e.stopPropagation();
-    
-            // $(this).find('span.arrow-item').not($(this)).hide();
-            $(this).find('span.arrow-item').not($(this)).removeClass('clicked');
-            // $(this).find('span.arrow-item').show();
-            $(this).find('span.arrow-item').addClass("clicked");
+            $(this).find('span.arrow-item').hide();
         });
     
-        $('#info ul.dropdown-content li').click(function (e) {
-            e.stopPropagation();
-    
-            $('#info ul.dropdown-content li span.arrow-item').not($(this)).hide();
-            $('#info ul.dropdown-content li span.arrow-item').not($(this)).removeClass('clicked');
-            $(this).find('span.arrow-item').show();
-            $(this).find('span.arrow-item').addClass("clicked");
-        });
-
-
         ///////////////////////////////////////////////////////////////////////////////
         // Move arrow to spot them
         anime({
