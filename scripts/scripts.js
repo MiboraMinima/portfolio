@@ -1,6 +1,15 @@
 // SCRIPTS NAV
 
 $(document).ready(function () {
+
+    // If the navigator is safari, display message
+    window.onload = function () {
+        if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'flex';
+        }
+    };
+
     ////////////////////////////////////////////////////////////////////////////
     // NAV MOVE
     $('nav ul li.dropdown').click(function (e) {
@@ -25,7 +34,7 @@ $(document).ready(function () {
         $('nav ul li ul.dropdown-content li ul').not($(this)).slideUp();
         $(this).children('ul').slideToggle();
     });
-    
+
     // Tout remettre par défaut quand on clique sur le titre
     $('div.titre').click(function () {
         $('.arrow-nav, .arrow-item').removeClass('clicked');
@@ -40,66 +49,66 @@ $(document).ready(function () {
 
     // Proj
     $('a#id-aix').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
         e.stopPropagation();
 
-        var target = $(this).attr('href'); 
-        $('.content, .swiper-container').hide(); 
-        $(target).show(); 
+        var target = $(this).attr('href');
+        $('.content, .swiper-container').hide();
+        $(target).show();
     });
     $('a#id-home').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
 
-        var target = $(this).attr('href'); 
-        $('.content, .swiper-container').hide(); 
-        $(target).show(); 
+        var target = $(this).attr('href');
+        $('.content, .swiper-container').hide();
+        $(target).show();
     });
     $('a#id-stage-l3').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
         e.stopPropagation();
 
-        var target = $(this).attr('href'); 
-        $('.content, .swiper-container').hide(); 
-        $(target).show(); 
+        var target = $(this).attr('href');
+        $('.content, .swiper-container').hide();
+        $(target).show();
     });
     $('a#id-mono-da').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
         e.stopPropagation();
 
-        var target = $(this).attr('href'); 
-        $('.content, .swiper-container').hide(); 
+        var target = $(this).attr('href');
+        $('.content, .swiper-container').hide();
         $(target).show();
     });
     $('a#id-etang-curnic').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
         e.stopPropagation();
 
-        var target = $(this).attr('href'); 
-        $('.content, .swiper-container').hide(); 
-        $(target).show(); 
+        var target = $(this).attr('href');
+        $('.content, .swiper-container').hide();
+        $(target).show();
     });
     $('a#id-dpt-routes').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
         e.stopPropagation();
 
 
-        var target = $(this).attr('href'); 
-        $('.content, .swiper-container').hide(); 
-        $(target).show(); 
+        var target = $(this).attr('href');
+        $('.content, .swiper-container').hide();
+        $(target).show();
 
     });
     $('a#id-api').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
         e.stopPropagation();
 
-        var target = $(this).attr('href'); 
-        $('.content, .swiper-container').hide(); 
-        $(target).show(); 
+        var target = $(this).attr('href');
+        $('.content, .swiper-container').hide();
+        $(target).show();
     });
 
     // Slider
     $('a#id-slider-div-carto').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
 
         $('li#nav-2 ul.dropdown-content li span.arrow-item').removeClass('clicked');
         $(this).next('span').addClass('clicked');
@@ -110,7 +119,7 @@ $(document).ready(function () {
     });
 
     $('a#id-slider-div-autre').click(function (e) {
-        e.preventDefault(); 
+        e.preventDefault();
 
         $('li#nav-2 ul.dropdown-content li span.arrow-item').removeClass('clicked');
         $(this).next('span').addClass('clicked');
@@ -139,7 +148,7 @@ $(document).ready(function () {
         $('li#info ul.dropdown-content li span.arrow-item').removeClass('clicked');
         $(this).next('span').addClass('clicked');
 
-        var target = $(this).attr('href'); 
+        var target = $(this).attr('href');
         $('.content, .swiper-container').hide();
         $(target).show();
     });
@@ -150,7 +159,7 @@ $(document).ready(function () {
         $('li#info ul.dropdown-content li span.arrow-item').removeClass('clicked');
         $(this).next('span').addClass('clicked');
 
-        var target = $(this).attr('href'); 
+        var target = $(this).attr('href');
         $('.content, .swiper-container').hide();
         $(target).show();
     });

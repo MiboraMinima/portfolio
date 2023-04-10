@@ -66,6 +66,25 @@
 
     <main>
 
+    <!-- Popup navigator -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>
+                Ce site a été optimisé pour Firefox et Chrome. <br>
+                <br>
+                Nous vous recommandons de consulter le site sur un de ces navigateurs.
+            </p>
+          <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        };
+    </script>
+
         <!-- ASIDE -->
         <aside class="container-aside">
             <div class="titre">

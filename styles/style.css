@@ -84,6 +84,7 @@ h3 {
     padding-bottom: 20px;
     line-height: 1.5em;
 }
+
 h3.green {
     font-weight: 500;
 }
@@ -117,6 +118,7 @@ a {
     line-height: 1.7vw;
     font-weight: 300;
 }
+
 .desc p {
     font-size: 1.1vw;
 }
@@ -144,4 +146,39 @@ a {
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+}
+
+
+/* POPUP*/
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-family: 'Fira Sans';
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.popup-content p {
+    font-size: 1vw;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+.popup-content button {
+    background-color: #007478;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
