@@ -1,7 +1,7 @@
 /* INFORMATIONS */
 .content-cv {
     float: left;
-    padding: 30px 40px;
+    padding: 4vh 3vw;
     width: 60%;
     height: 95vh;
 }
@@ -17,11 +17,19 @@
     padding-top: 0;
 }
 
-.grid-item h3, .texte-child-hor h3 {
+.grid-item h3 {
     font-size: 1vw;
     font-weight: 500;
     font-style: italic;
-    padding-top: 0px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+.texte-child-hor h3 {
+    font-size: 1vw;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 0.8vw;
     padding-bottom: 10px;
     line-height: 1.5em;
 }
@@ -49,6 +57,7 @@
 .date-child {
     float: left;
     width: 20%;
+    padding-top: 0.2vw;
 }
 .texte-child {
     float: left;
@@ -58,16 +67,16 @@
 
 /* Grid */
 .grid-container {
-    display: grid;
+    display: flex;
     width:100%;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-auto-flow: dense;
+    height: 77vh;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .grid-item {
     /* background-color: lightblue; */
-    padding: 20px 20px;
+    padding: 2vh 2vh;
     font-size: 0.85vw;
 }
 
@@ -188,7 +197,7 @@
 }
 
 .content-stage {
-    padding: 30px 40px;
+    padding: 4vh 3vw;
     width: 100%;
     width: -webkit-fill-available;
     height: 60vh;
@@ -207,8 +216,8 @@
 
 /* Underline */
 .underline {
-    padding-bottom: 0.35vw;
-    border-bottom: 0.35vw solid #007478;
+    padding-bottom: 0.35vh;
+    border-bottom: 0.7vh solid #007478;
 }
 
 /* Par ailleurs*/
@@ -268,9 +277,9 @@
     border-radius: 50%;
     background-color: white;
 }
-.container-form-corp {
+/* .container-form-corp {
     padding-bottom: 15px;
-}
+} */
 .box {
     position: relative;
     width: 3.7%;

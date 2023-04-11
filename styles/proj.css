@@ -1,6 +1,6 @@
 /* Style Projets */
 .content-top {
-    padding: 30px 40px;
+    padding: 4vh 3vw;
     width: 100%;
     /*shlag shit*/
     width: -webkit-fill-available;
@@ -10,7 +10,7 @@
 
 .content-left {
     float: left;
-    padding: 30px 40px;
+    padding: 4vh 3vw;
     width: 60%;
     height: 95vh;
 }
@@ -31,7 +31,7 @@
 }
 
 .content-top-example {
-    padding: 30px 40px;
+    padding: 4vh 3vw;
     width: 100%;
     /*shlag shit*/
     width: -webkit-fill-available;
@@ -41,7 +41,7 @@
 
 .content-bottom-example {
     display: none;
-    /* padding: 30px 40px; */
+    /* padding: 4vh 3vw; */
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -49,7 +49,7 @@
 }
 
 .content-bottom-example p.proj-desc {
-    padding: 30px 40px;
+    padding: 4vh 3vw;
 }
 
 .swiper-slide p {
@@ -206,7 +206,7 @@ p.proj-desc {
 }
 
 .content-top ul li {
-    padding-top: 10px;
+    padding-top: 1.25vh;
 }
 
 
@@ -268,7 +268,7 @@ h5 {
     font-family: 'Fira Sans';
     font-size: 1.05vw;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 2.8vh;
 }
 
 .trait-slide-contain {
@@ -279,7 +279,7 @@ h5 {
 
 .trait-div-slide {
     display: flex;
-    padding: 15px 0px 30px 40px;
+    padding: 3vh 0 0 3vw;
 }
 
 .trait-div-slide-text {
@@ -295,9 +295,9 @@ h5 {
     display: flex;
     flex-direction: column;
 }
-
-.trait-div-slide-button p {
-    font-size: 250%;
+.trait-div-slide-button p a {
+    font-size: 3vw;
+    font-weight: 300;
 }
 
 p.proj-desc-sub {
@@ -317,7 +317,7 @@ ol {
 }
 
 ol li {
-    padding-top: 10px;
+    padding-top: 1.5vh;
 }
 
 /*TABLE*/

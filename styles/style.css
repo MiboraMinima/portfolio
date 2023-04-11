@@ -64,7 +64,7 @@ h1 {
     font-family: 'Fira sans';
     font-weight: 400;
     font-size: 2vw;
-    margin-bottom: 50px;
+    margin-bottom: 8vh;
     margin-left: 8%;
     padding-top: 3%;
 }
@@ -74,14 +74,14 @@ h2 {
     font-weight: 400;
     font-style: italic;
     font-size: 2vw;
-    padding-bottom: 30px;
+    padding-bottom: 4.5vh;
 }
 
 h3 {
     font-size: 1.4vw;
     font-weight: 500;
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 3vh;
     line-height: 1.5em;
 }
 

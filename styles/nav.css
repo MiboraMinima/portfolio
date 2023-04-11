@@ -51,7 +51,7 @@ ul.dropdown-content li {
     background-color: white;
     box-shadow: none;
     border: white;
-    padding: 15px 0 15px 8%;
+    padding: 2vh 0 2vh 8%;
     font-size: 2vw;
 }
 
@@ -64,7 +64,7 @@ ul.ul-proj li {
     font-family: 'Fira sans';
     font-weight: 300;
     line-height: 1.5em;
-    padding: 7px 0;
+    padding: 0.7% 0;
     padding-left: 50px ;
     text-indent: -36px ;
 }
