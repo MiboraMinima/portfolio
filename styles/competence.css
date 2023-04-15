@@ -71,23 +71,30 @@
     text-align: right;
 }
 .comp-detail img {
-    width: 70%;
+    width: 7vw;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 15vh;
 }
 .comp-detail-img {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px 150px;
-    grid-gap: 10px;
-    padding-top:6%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 17vh 20vh;
+	grid-gap: 1vw;
+	padding-top: 7vh;
+	height: 44vh;
+	position: absolute;
+	bottom: 0;
+	width: 44vw;
 }
 .comp-detail-img-py {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 150px 150px;
-	grid-gap: 10px;
+	grid-template-rows: 17vh 20vh;
+	grid-gap: 1vw;
 	padding-top: 6%;
+	position: absolute;
+	bottom: 0;
 }
 .comp-detail-img-py img {
     width: 83%;
@@ -132,8 +139,6 @@ div#py-log img {
 }
 .bar-anime {
     width:0%;
-    height: 20%;
+    height: 5vh;
     background-color: #007478;
-    margin-bottom: 20px;
-    
 }

@@ -42,6 +42,7 @@ $(document).ready(function () {
     });
 })
 
+/////////////////////////////////////////////////////////////////////////////////
 // Move tdc
 $(document).ready(function () {
     $('#id-tdc polygon').mouseenter(function () { 
@@ -217,6 +218,7 @@ $(document).ready(function () {
         easing: "easeOutBack"
     });
 
+    /////////////////////////////////////////////////////////////////////////////////
     // animate graph style of the div
     var tl1 = anime.timeline({
         autoplay:true,
@@ -226,19 +228,19 @@ $(document).ready(function () {
     tl1
     .add({
         targets:'#bar-1',
-        width: '300px',
+        width: '20vw',
         easing: 'easeInOutQuad',
         duration: 2000
     })
     .add({
         targets:'#bar-1',
-        width: '700px',
+        width: '45vw',
         easing: 'easeOutBounce',
         duration:1500
     })
     .add({
         targets:'#bar-1',
-        width: '0px',
+        width: '0vw',
         easing: 'easeOutQuad',
         duration:500
     })
@@ -252,26 +254,26 @@ $(document).ready(function () {
     tl2
     .add({
         targets:'#bar-2',
-        width: '775px',
+        width: '47vw',
         easing: 'easeInQuad',
         duration: 2000,
         delay:2000
     })
     .add({
         targets:'#bar-2',
-        width: '400px',
+        width: '32vw',
         easing: 'easeOutBack',
         duration:1500
     })
     .add({
         targets:'#bar-2',
-        width: '600px',
+        width: '40vw',
         easing: 'easeInCubic',
         duration:500
     })
     .add({
         targets:'#bar-2',
-        width: '0px',
+        width: '0vw',
         easing: 'easeInCubic',
         duration:750
     });
@@ -285,20 +287,22 @@ $(document).ready(function () {
     tl3
     .add({
         targets:'#bar-3',
-        width: '100px',
+        width: '10vw',
         easing: 'easeInOutQuad',
-        duration: 2000
+        duration: 2000,
+        delay:1000
     })
     .add({
+        delay:500,
         targets:'#bar-3',
-        width: '800px',
-        easing: 'easeInExpo',
+        width: '50vw',
+        easing: 'easeInOutElastic',
         duration:1500
     })
     .add({
-        delay:2000,
+        delay:500,
         targets:'#bar-3',
-        width: '0px',
+        width: '0vw',
         easing: 'easeOutQuad',
         duration:500
     })
@@ -311,33 +315,28 @@ $(document).ready(function () {
 
     tl4
     .add({
+        delay:1000,
         targets:'#bar-4',
-        width: '800px',
+        width: '55vw',
         easing: 'easeInOutQuad',
         duration: 5000
     })
     .add({
         targets:'#bar-4',
-        width: '250px',
+        width: '20vw',
         easing: 'easeOutBounce',
         duration:1500
     })
     .add({
         targets:'#bar-4',
-        width: '500px',
+        width: '40vw',
         easing: 'easeInElastic',
         duration:3000
     })
     .add({
         targets:'#bar-4',
-        width: '200px',
+        width: '0vw',
         easing: 'easeInOutCubic',
         duration:500
     })
-    .add({
-        targets:'#bar-4',
-        width: '0px',
-        easing: 'easeOutQuad',
-        duration:1500
-    });
 });

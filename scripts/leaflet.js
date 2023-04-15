@@ -25,17 +25,13 @@ fetch('DATA/Curnic.geojson')
         return response.json();
     })
     .then(function (geojson) {
-        // Add the GeoJSON data to the map as a layer
 
         L.geoJSON(geojson, {
             pointToLayer: function (feature, latlng) {
                 // Create the marker
                 var marker = L.marker(latlng, {
-                    // Make the marker rise on hover
-                    riseOnHover: true,
-
+                    riseOnHover: true, // Make the marker rise on hover
                     properties: feature.properties,
-
                     icon: L.icon({
                         iconUrl: 'figures/logos/marker.svg',
                         iconSize: [25, 41],
@@ -46,14 +42,11 @@ fetch('DATA/Curnic.geojson')
 
                 // Create the popup
                 var popup = L.popup();
-                // Set the content of the popup to an image element with custom CSS styles
                 popup.setContent(`
                     <p><b>${feature.properties.places}</b></p>
                 `);
-                // Bind the popup to the marker
                 marker.bindPopup(popup);
 
-                // Return the marker
                 return marker;
             }
         }).addTo(map);
